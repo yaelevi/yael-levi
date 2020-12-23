@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+:root{
+  --first-color: #210554;
+  --second-color: white;
+}
+.navbar{
+    height: 15vh ;
+}
+
+.btn-show{
+  
+}
+
+.btn-nav-bar>button {
+    border: none;
+    color: var(--second-color);
+    background: transparent;
+    font: normal normal normal 20px/24px Roboto;
+    margin-right: 1vw;
+
+}
+.btn-nav-bar>button:last-child{
+    background-color:#210554;
+    box-shadow: 0px 0px 10px white;
+    border:none;
+    opacity: 1;
+    border-radius: 35px;
+    width: 6vw;
+    font: normal normal normal 15px/18px Assistant;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+.desk-part-1{
+    background: url('../../img/desk-part-1.png');
+    height: 100vh;
+}
+.desk-part-2{
+    background-image: url('../../img/desk-part-2 (2).png');
+    height: 200vh;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+.desk-part-3{
+    background: url('../../img/desk-part-3.png');
+    height: 110vh;
+    
+}
+.desk-part-4{
+    background: url('../../img/deak-part-4.png');
+    height: 190vh;
+
+}
+.desk-part-7{
+  background: url('../../img/desk-part-7.png');
+  height: 110vh;
+
+}
+.desk-part-1, .desk-part-2, .desk-part-3, .desk-part-4, .desk-part-7{
+    background-size: cover;
+    background-repeat:no-repeat;
+    
+}
+.desk-part-3 .steps{
+    padding-top: 10vh;
+
+}
+
+.title,.text{
+
+color: var(--unnamed-color-ffffff);
+text-align: left;
+font: normal normal medium 58px/63px Roboto;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: capitalize;
+opacity: 1;
+}
+  .text{
+      font-size: medium;
+  }
+    .lets-start{
+    border: 1px solid #FFFFFF;
+    font: normal normal medium 17px/23px Roboto;
+    border-radius: 5px;
+    float:left;
+    color:white;
+    background-color: transparent;
+    width: 10vw;
+    height: 5vh;
+   
+     /* top:10vh; */
+    }
+
+    .airport{
+      background-color: transparent;
+    }
+
+   .our-method{
+    text-align: left;
+    color: #571092;
+    text-transform: lowercase;
+    border-left: 3px #571092 solid;
+   }
+    .our{
+      font: normal normal medium  Roboto;
+      font-size: xx-large;
+      font-weight: 500;
+      text-transform: lowercase;
+    }
+    .mvp{
+      padding: 0;
+      font-weight: bold;
+      text-transform: capitalize;
+      font-size: 560%;
+    }
+  
+ 
+    .steps{
+    text-align: left;
+    text-transform: lowercase;
+    }
+  
+    .steps h1{
+       font: normal normal normal 105px/130px Righteous;
+    }
+    .p-1{
+      font: normal normal bold 40px/43px Roboto;
+      color: #210554;
+    }
+    .desk-part-4 .steps,  .desk-part-4 .room-4{
+    top: 20vh;
+    }
+    .desk-part-3 .p-1{
+      color: #FFFFFF;
+    }
+    .desk-part-7 h1{
+     color: #FFFFFF;
+    }
+    .learn-languages{
+      margin-top:45vh;
+      /* position: relative; */
+    }
+    input[type=text]{
+      color:white;
+    }
+     .step-three{
+      color: #210554;
+    }
+    .desk-part-2 .steps {
+    color: #571092;
+    }  
+    .desk-part-3 .steps p, .desk-part-3 .steps h1 {
+     color:#FFFFFF;
+    } 
+
+    .desk-part-4 .steps 
+    {
+     color: #571092;
+    }
+    .part-2-a{
+      margin-top: 40vh;
+    }
+    .desk-part-2 .lets-start{
+      color: #571092;
+      border-color: #571092;
+    }
+    .desk-part-5 h1{
+      text-align: center;   
+   }
+   .p-2{
+    text-align: center;
+    font: normal normal bold 40px/43px Roboto;
+    letter-spacing: 0px;
+    color: #210554;
+    margin-right: auto;
+   }
+   @keyframes arrowmove {
+   50% {transform: rotate(180deg);}
+ 
+  }
+  .arrow{
+    animation: arrowmove 5s infinite;
+    animation-delay: 1s;
+    animation-duration: 8s;
+  }
+  .border{
+      height: 5px ;
+      background-color:#210554;
+
+  }
+  .leaderScren{
+    background: url('../../img/leader-screen.png');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: center;
+  }
+  .leaderScren div {
+    padding-top: 60vh;
+  }
+  .screen-2, .screen-3, .screen-4, .screen-5{
+    height: 80vh;  
+    background-size: center;
+    text-align: left;
+  }
+  .screen-2{
+    background: url('../../img/screen-2.png');
+    background-repeat: no-repeat;
+  }
+  .screen-2 div, .screen-5 div{
+    margin-top: 43vh;
+    padding-left:90vh;   
+  }
+ h1{
+  font: normal normal bold 40px/43px Roboto;
+  color: #210554;
+  }
+
+  p{
+    font: normal normal medium 20px/26px Roboto;
+    color: #210554;
+    
+  }
+
+  .screen-2 p, .screen-3 p, .screen-5 p, .part-6-a p{
+     border-bottom:  3px solid #210554;
+     padding-bottom: 5vh;
+  }
+  .part-6-a {
+    text-align: left;
+  }
+  .screen-3{
+    background: url('../../img/screen-3.png');
+    background-repeat: no-repeat;
+    margin-right: -130vh;
+  }
+  .screen-3 div{
+    margin-top: 43vh;
+    margin-left: -18vw;
+    float: left;  
+  }
+  .screen-4{
+    background: url('../../img/screen-4.png');
+    background-repeat: no-repeat;
+
+  }
+  .screen-5{
+    height: 110vh;
+    background: url('../../img/screen-5.png');
+    background-repeat: no-repeat;
+  }
+  .screen-5 div{
+    margin-top: 70vh;
+  }
+    .mern{
+      color: var(--unnamed-color-210554);
+      font: normal normal normal 196px/243px Righteous;
+      letter-spacing: 0px;
+      color: #210554;
+      text-transform: uppercase;
+      opacity: 1;
+    }
+    .languages{
+      color: var(--unnamed-color-210554);
+      font: normal normal bold 27px/29px Roboto;
+      letter-spacing: 0px;
+      word-spacing: 1vw;
+      color: #210554;
+    }
+    .icon>img{
+      margin-left:2vw;
+    }
+    input {
+      border: none;
+      border-bottom: 2px solid #571092;
+      background-color: transparent;
+      width: 20vw;
+    }
+    
+    input:focus{ 
+     outline: 0;
+    }
+
+
+    input:hover {
+      border-bottom: 2px solid white;
+
+    }
+    label{
+      margin-top:1vh ;
+      color: var(--unnamed-color-ffffff);
+      text-align: left;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      text-transform: capitalize;
+
+    }
+    .call-us{
+      margin-top:2vh;
+      background: transparent url('../../img/btn-call-us.png') 0% 0% no-repeat padding-box;
+      background-position: center;
+      background-size: contain;
+      width: 11vw;
+      height: 6vh;
+      border:none;
+
+    }
+    .lets-start:focus{
+      outline: 0;
+    }
+    .lets-start:focus{
+      outline: 0;
+    }
+  
+    .details{
+      margin-top:15vh;
+    }
+    .details img{
+      margin-left: 1vw;
+      background-size: contain;
+      width: 16px;
+     height: 23px;
+    }
+    .details p{
+      margin-left: 1vw;
+      color: var(--unnamed-color-ffffff);
+      text-align: left;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      text-transform: capitalize;
+      opacity: 1;
+    }
+
+    .boy:hover {   
+      animation: mymove 5s infinite;
+      animation-delay: 0s;
+      animation-duration: 3s;
+    }
+
+    
+  @keyframes mymove {
+    40%{transform: rotate(5deg);}
+ 
+  }
+  .cloud-2-desk {
+    animation: moveCloudDeskLeft alternate;
+  }
+  .cloud-1-desk {
+    animation: moveCloudDeskRight alternate;
+  }
+  .cloud-2-desk, .cloud-1-desk {
+    animation-delay: 0s;
+    animation-duration: 4s;
+    width: 135px;
+    height: 111px;
+    margin-top: 50vh;
+    }
+    .airport{
+      animation: moveAurport  alternate;
+      animation-delay: 0s;
+      animation-duration: 4s;
+    }
+    @keyframes moveCloudDeskLeft {
+      0%{ bottom:0px; left: 0px;} 
+      50%{ bottom:700px; left: 150px;}
+      100%{bottom: 0px; left: 0px;}
+    }
+    @keyframes moveCloudDeskRight {
+      0%{ bottom:0px; right: 0px;} 
+      50%{ bottom:700px; right: 150px;}
+      100%{bottom: 0px; right: 0px;}
+    }
+ 
+    @keyframes moveAurport {
+      0%{ bottom:0px} 
+      50%{ bottom:100px}
+      100%{bottom: 0px}
+    }
+  @media screen and (max-width:414px),
+  screen and (max-width:823px){
+
+    .navbar{
+      height: 10vh;
+
+  } 
+
+  .cloud2:hover{
+    /* margin-bottom: -400px; */
+    margin-right: 0;
+    animation-name: moveCloud;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  
+  }
+  .cloud1:hover{
+    /* margin-top: -100px; */
+    animation-name: moveCloud1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay:0s;
+  }
+
+  @keyframes moveCloud {
+    0%{ bottom:-200px ;left: 60px;} 
+    50%{ bottom:-50px;left: 30px;}
+    100%{bottom: -200px;left: 60px;}
+  }
+  @keyframes moveCloud1 {
+    0%{ top:-200px ;left: 60px;} 
+    50%{ top:-50px;left: 0px;}
+    100%{top: -200px;left: 60px;}
+  }
+ 
+  .mobile-part-1 .title{
+    font: normal normal medium  Roboto;
+    font-size: xx-large;
+    font-weight: 500;
+  }
+  .lets-start{
+    background-color: #210554;
+    height: 6vh;
+    z-index: 3;
+    position: fixed !important;
+    bottom:5vh;
+    
+  }
+
+  .our-method{
+    text-align: center;
+    border:none;
+  }
+  .mvp{
+    font-weight:500;
+    font-size:700%;
+  }
+  .part-2-a{
+    margin-top: 15vh;
+  }
+  .steps-mobile h1{
+    font: normal normal normal 48px/59px Righteous;
+  }
+  .steps-mobile p{
+    color: #571092;
+    font: normal normal bold 25px/25px Roboto;
+    border-color: #571092;
+  }
+
+  .screen-1{
+    background: url('../../mobile-img/leaderScreen.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 40vh;
+  }
+  .screen h1,.screen p{
+    text-align: left; 
+  }
+  .screen-2{
+    background: url('../../mobile-img/screen-2.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 50vh;
+    
+  }
+  .line{
+    height: 3px;
+    width: 100vw;
+    background-color: #210554;
+    float: left;
+  }
+  .screen-4{
+    background: url('../../mobile-img/screen-4.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 50vh;
+   
+  }
+  .screen-5{
+    background: url('../../mobile-img/screen-5.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 50vh;
+   
+  }
+  .screen-6{
+    background: url('../../mobile-img/screen-6.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 50vh;
+   
+  }
+  .screen-7{
+    background: url('../../mobile-img/phon-img.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 50vh;
+  }
+  .mobile-part-3{
+    background: url('../../mobile-img/mobile-part-3.png');
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -5vh;
+  }
+  .mobile-part-4{
+    background: url('../../mobile-img/mobile-part-4.png');
+    height: 210vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+   .step-two h1, .step-two p{
+    color: #FFFFFF;
+  }
+  .step-two h1, .step-three.h-1{
+    text-align: left;
+    font: normal normal normal 65px/81px Righteous;
+    letter-spacing: 0px;
+    
+  }
+  .step-two p, .step-three p{
+    text-align: left;
+    font: normal normal normal 20px/26px Roboto;
+  }
+   .p-1{   
+    font: normal normal bold 25px/25px Roboto;
+    letter-spacing: 0px; 
+  } 
+  .mern{
+    text-align: left;
+    font: normal normal normal 126px/103px Righteous;
+    letter-spacing: 0px;
+    color: #210554;
+  }
+ 
+  .music-p .p-1{
+    line-height: 120%;
+    text-align: left;
+    font-size: xx-large;
+  }
+  .mus{
+    top: -10vh;
+  }
+   .mobile-part-7 .step-one h1{
+     color: #FFFFFF;
+     text-align: center;
+    }
+    .step-one h1, .step-two h1, .step-three h1{
+      margin-right: 5vw;
+      text-align: center;
+      font: normal normal normal 75px/91px Righteous;
+      letter-spacing: 0px;
+    }
+    .step-two p{
+     color:white;
+     text-align: left;
+    }
+    .step-one p, .step-three p{
+      text-align: left;
+      color: #571092;
+      font: normal normal normal 20px/26px Roboto;
+
+    }
+    .step-two .p-1{
+      font: normal normal bold 25px/25px Roboto;
+      color: white;
+
+    }
+    .step-three .p-1{
+      font: normal normal bold 25px/25px Roboto;
+
+    }
+    .step-one .p-1,  .step-one .p-1{   
+      font: normal normal bold 25px/25px Roboto;
+      letter-spacing: 0px;
+      color: #571092;
+    }
+
+    .languages label{
+     font-weight: bolder;
+     font-size: large;
+     color: #210554;
+
+    }
+    .details {
+      margin-top:0;
+    }
+    .details img{
+      background-size: contain;
+      width: 16px;
+     height: 23px;
+    }
+    .details p{
+
+      color: #FFFFFF;
+      text-align: right;
+   
+    } 
+    .modal-dialog{
+      width: 75%;
+      }
+  }
+
+ .mobile-part-1{
+  background: url('../../mobile-img/mobile-part-1.png');
+  height: 110vh;
+ 
+ }
+ .mobile-part-2{
+  background: url('../../mobile-img/mobile-part-2.png');
+  height: 200vh; 
+  
+ }
+ .mobile-part-7{
+  background: url('../../mobile-img/mobile-part-7.png');
+  height: 160vh; 
+ }
+ .mobile-part-1, .mobile-part-2, .mobile-part-7{
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+.nav{
+
+height: 25px;
+
+}
+.btn-nav{
+  border:none;
+  background-color: transparent;
+}
+.btn-nav:focus{
+  outline: 0;
+ 
+}
+
+.menue{
+  background: url('../../mobile-img/background-menu.png');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: -8vw;
+  top: 0;
+  right:0;
+  margin-top: -2vh;
+  overflow: hidden;
+    
+}
+.menue p{
+  width: 109px;
+height: 25px;
+color: var(--unnamed-color-ffffff);
+text-align: left;
+font: normal normal normal 24px/66px ;
+letter-spacing: 0px;
+color: #FFFFFF;
+font-size: x-large;
+}
+
+.menue img:not(:first-child){
+  width: 24px;
+height: 23px;
+}
+.icons{
+  margin-bottom: 0;
+}
