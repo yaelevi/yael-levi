@@ -7,10 +7,11 @@
   --first-color: #210554;
   --second-color: white;
 }
+@media screen and (min-width:720px){
+
 .navbar{
     height: 15vh ;
 }
-
  
 .appointment, .read-more-about{
   border: 1px solid #FFFFFF;
@@ -31,9 +32,8 @@
   }
 
 
-
 .appointment{
-  background-color: #210554;
+  /* background-color: #210554; */
   height: 6vh;
   z-index: 3; 
   /* position: fixed ;  */
@@ -106,7 +106,7 @@ background-color: #F1FEFF;
 .title,.text{
 text-align: right;
 color: var(--unnamed-color-ffffff);
-text-align: right;
+/* text-align: center; */
 /* font: normal normal medium 58px/63px Roboto; */
 letter-spacing: 0px;
 color: #FFFFFF;
@@ -399,8 +399,8 @@ opacity: 1;
       color: #571092;
      }
      .aplicate .know-me img{
-      float: right;
-      margin-top: calc(95vh - 661px);
+      /* float: right;
+      margin-top: calc(95vh - 661px); */
      }
     
     .box h1{
@@ -605,9 +605,10 @@ opacity: 1;
       border-radius: 25px;
       background-color: var(--first-color);
     }
+  }
     @media screen and (max-height:641px){
       .mobile-part-1{
-        height: 120vh !important;
+        /* height: 120vh !important; */
        }
     }
     @media screen and (max-width:641px){
@@ -616,8 +617,11 @@ opacity: 1;
       }
     }
   
-  @media screen and (max-width:414px),screen and (max-height:824px){
-     
+  @media screen and (max-width:540px){
+     .title,.text{
+      text-align: center !important;
+    }
+
 .card-list-paper{
   height: 35vh;
 }
@@ -818,7 +822,7 @@ opacity: 1;
   }
   .mobile-part-4{
     background: url('../../mobile-img/mobile-part-4-new.png');
-    height: 300vh;
+    height: 250vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -888,12 +892,12 @@ opacity: 1;
 
  .mobile-part-1{
   background: url('../../mobile-img/mobile-part-1.png');
-  height: 110vh;
+  height: 105vh;
  
  }
  .mobile-part-2{
   background: url('../../mobile-img/mobile-part-2-new.png');
-  height: 350vh; 
+  height: 300vh; 
   
  }
  

@@ -65,27 +65,25 @@ export default function HomePageDesk() {
                             <a href="#agile"><button>AGILE שיטת</button></a>
                         </div>
                     </nav>
-                    <div class=" row  ">
-                        <div className="col-6 ml-5">
+                    <div class=" row justify-content-center">
+                        <div className="col-5 ml-5">
                             <div className="container-fluid">
                                 <div className="row mt-5">
                                     <img src={cloud2} className="cloud-2-desk col-3"></img>
-                                    <img src={airport} className="airport col-4 mt-5"></img>
+                                    <img src={airport} className="airport col-5 mt-5"></img>
                                     <img src={cloud1} className="cloud-1-desk col-3"></img>
                                     {/* <img src={cloud3} className="cloud-3-desk col-3"></img> */}
-
-
                                 </div>
                             </div>
                         </div>
-                        <div class="col-5 mt-4">
+                        <div class="col-4 mt-4">
                             <h1 className="title-header mt-5">חממה טכנולוגית AGILE בשיטת</h1>
                             <p className="text mt-4 ">
                                 Leader.Codes מקבוצת StartUpPlan ברוכים הבאים ל ומערכות CMS, אנחנו מתמחים בפיתוח תוכנה, אפליקציות, מערכות .השיטה שלנו מאפשרת לחסוך של עד 50% מהוצאות הפיתוח. CRM
                             </p>
                             <div className="row justify-content-end mt-4">
-                                <button className="appointment mt-3 mr-4 "  >קבע פגישת ייעוץ חינם</button>
-                                <button className="read-more-about mt-3 mr-4"  >קרא עוד אודות השיטה</button>
+                                <a href="#connectUs"> <button className="appointment mt-3 mr-4 "  >קבע פגישת ייעוץ חינם</button></a>
+                                {/* <button className="read-more-about mt-3 mr-4"  >קרא עוד אודות השיטה</button> */}
                             </div>
                         </div>
                     </div>
@@ -314,16 +312,17 @@ export default function HomePageDesk() {
             </div>
             <div className=" container-fluid desk-part-6">
                 <div className="row justify-content-center row align-items-center know-me aplicate">
-                    <div className=" col-5">
-                        <img src={phone}></img>
-                    </div>
-                    <div className="offset-1 col-3">
+
+                    <div className=" col-4">
                         <img className="mb-4" src={knowMeLogo}></img>
                         <h1 >אינדקס B2B</h1>
                         <p className="mt-2">. הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן ,
                         בחודש הזה אנחנו יוצרים את התבנית.
                         מאפיינים מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם .כל הפונקציות של הסטארט-אפ שלכם
                         </p>
+                    </div>
+                    <div className=" col-5">
+                        <img src={phone}></img>
                     </div>
                 </div>
             </div>
@@ -435,7 +434,7 @@ export default function HomePageDesk() {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid desk-part-14">
+            <div className="container-fluid desk-part-14" id="connectUs">
                 <div className="row justify-content-center  pt-5">
                     <div className="col-4 mt-5 pt-5">
                         <img className="boy mt-5 " src={cup}></img>
