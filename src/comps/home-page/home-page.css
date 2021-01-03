@@ -268,7 +268,7 @@ opacity: 1;
       font-size:45px;
     }
     .part-2-a{
-      margin-top: 40vh;
+      /* margin-top: 40vh; */
     }
     .desk-part-2 .lets-start{
       color: #571092;
@@ -616,7 +616,7 @@ opacity: 1;
       }
     }
   
-  @media screen and (max-width:414px),screen and (max-height:824px){
+  @media screen and (max-width:414px),screen and (max-height:600px){
      
 .card-list-paper{
   height: 35vh;
@@ -691,7 +691,7 @@ opacity: 1;
     font-size:700%;
   }
   .part-2-a{
-    margin-top: 15vh;
+    /* margin-top: 15vh; */
   }
   h2{
     font-weight: 700;

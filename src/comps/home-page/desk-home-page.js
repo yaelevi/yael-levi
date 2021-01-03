@@ -93,7 +93,7 @@ export default function HomePageDesk() {
             </div>
             <div className=" container-fluid desk-part-2" id="agile">
                 <div className=" mt-5 row justify-content-center row align-items-center">
-                    <h2 className="agile mt-5 col-12">השיטה שלנו</h2>
+                    <h2 className="agile mt-2 col-12">השיטה שלנו</h2>
                     <div className="mt-5 col-3">
                         <img src={magnifier1} ></img>
                     </div>
@@ -121,9 +121,9 @@ export default function HomePageDesk() {
                              נעדיף להעמיק את שיתוף הפעולה וללמוד תוך כדי תנועה. כך גם הצוותים שלנו עובדים במקביל ובדו שיח על בסיס יומיומי. הסנכרון של צוותים בעלי יכולות מגוונות מאפשר לנו למנוע פקקים והתעכבויות ולפתח באופן עצמאי וללא תלות חיצונית, כל יכולת מקצה לקצה.</p>
                     </div>
                 </div>
-                <div className="row part-2-a">
-                    <img src={room2} className="col-6 "></img>
-                    <div className="offset-1 col-4 steps">
+                <div className="row part-2-a mt-5 ">
+                    <img src={room2} className="col-6 mt-5"></img>
+                    <div className="offset-1 col-4 steps ">
                         <h2>1</h2>
                         <h3>מסמנים מטרה</h3>
                         <div className="border mt-4 w-25 "></div>
