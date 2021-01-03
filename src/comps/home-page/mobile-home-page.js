@@ -91,8 +91,8 @@ export default function HomePageMobile() {
                 </nav>
 
                 <div className=" row justify-content-center mt-3" >
-                    <div className="col-10">
-                        <h2 className="title px-1">חממה טכנולוגית AGILE  בשיטת</h2>
+                    <div className="col-11">
+                        <h2 className="title px-1">חממה טכנולוגית בשיטת agile</h2>
                         <div className="airport offset-3 col-9 mt-4">
                             {/* <img src={cloud2} className=" col-4  cloud2"></img> */}
                             <div className="airport-animate col-4"> <img src={airport} ></img></div>
@@ -233,8 +233,8 @@ export default function HomePageMobile() {
                     </div>
                     <div className="row justify-content-center ">
                         <div className="col-5 peper-card">
-                                <h2 className="mt-2">AI</h2>
-                                <p>Artificial Intelligence</p>
+                            <h2 className="mt-2">AI</h2>
+                            <p>Artificial Intelligence</p>
                         </div>
                         <div className="col-5 ml-2 peper-card">
                             <h2 className="mt-2">BI</h2>

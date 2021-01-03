@@ -7,10 +7,11 @@
   --first-color: #210554;
   --second-color: white;
 }
+@media screen and (min-width:720px){
+
 .navbar{
     height: 15vh ;
 }
-
  
 .appointment, .read-more-about{
   border: 1px solid #FFFFFF;
@@ -31,9 +32,8 @@
   }
 
 
-
 .appointment{
-  background-color: #210554;
+  /* background-color: #210554; */
   height: 6vh;
   z-index: 3; 
   /* position: fixed ;  */
@@ -50,7 +50,7 @@
     height: 100vh;
 }
 .desk-part-2{
-    background-image: url('../../img/desk-part-2 (2).png');
+    background-image: url('../../img/Group 27128.png');
     height: 210vh;
     background-position: center;
     overflow-x: hidden;
@@ -106,7 +106,7 @@ background-color: #F1FEFF;
 .title,.text{
 text-align: right;
 color: var(--unnamed-color-ffffff);
-text-align: right;
+/* text-align: center; */
 /* font: normal normal medium 58px/63px Roboto; */
 letter-spacing: 0px;
 color: #FFFFFF;
@@ -189,12 +189,12 @@ opacity: 1;
      }
     h3{
       color: #210554;
-      font-size: 40px !important;
+      font-size: 35px !important;
       font-weight: 650 !important;
     }
     h4{
       font-weight: 650 !important;
-      font-size: 35px !important;
+      font-size: 25px !important;
 
     }
     .circle{
@@ -241,7 +241,7 @@ opacity: 1;
       border: none !important;
     }
     .desk-part-4 .steps,  .desk-part-4 .room-4{
-    top: 20vh;
+    /* top: 20vh; */
     }
     .desk-part-3 .p-1{
       color: #FFFFFF;
@@ -399,8 +399,8 @@ opacity: 1;
       color: #571092;
      }
      .aplicate .know-me img{
-      float: right;
-      margin-top: calc(95vh - 661px);
+      /* float: right;
+      margin-top: calc(95vh - 661px); */
      }
     
     .box h1{
@@ -605,9 +605,10 @@ opacity: 1;
       border-radius: 25px;
       background-color: var(--first-color);
     }
+  }
     @media screen and (max-height:641px){
       .mobile-part-1{
-        height: 120vh !important;
+        /* height: 120vh !important; */
        }
     }
     @media screen and (max-width:641px){
@@ -616,8 +617,11 @@ opacity: 1;
       }
     }
   
-  @media screen and (max-width:414px),screen and (max-height:600px){
-     
+  @media screen and (max-width:540px){
+     .title,.text{
+      text-align: center !important;
+    }
+
 .card-list-paper{
   height: 35vh;
 }
@@ -703,8 +707,8 @@ opacity: 1;
     text-align: right; 
   }
   h4{
-    font-weight: 600 !important;
-    font-size: 30px !important;
+    font-weight: 500 !important;
+    font-size: 25px !important;
   }
   .step-three p{
     float: right;
@@ -715,9 +719,9 @@ opacity: 1;
 
     /* text-align: right; */
   }
-  .h4{
+  /* .h4{
     float: right;
-  }
+  } */
   .agiles p, .agiles h2 ,.agile{
     text-align: center ;
   }
@@ -818,7 +822,7 @@ opacity: 1;
   }
   .mobile-part-4{
     background: url('../../mobile-img/mobile-part-4-new.png');
-    height: 300vh;
+    height: 250vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -888,12 +892,12 @@ opacity: 1;
 
  .mobile-part-1{
   background: url('../../mobile-img/mobile-part-1.png');
-  height: 110vh;
+  height: 105vh;
  
  }
  .mobile-part-2{
   background: url('../../mobile-img/mobile-part-2-new.png');
-  height: 350vh; 
+  height: 300vh; 
   
  }
  

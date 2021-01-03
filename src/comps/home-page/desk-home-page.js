@@ -65,27 +65,25 @@ export default function HomePageDesk() {
                             <a href="#agile"><button>AGILE שיטת</button></a>
                         </div>
                     </nav>
-                    <div class=" row  ">
-                        <div className="col-6 ml-5">
+                    <div class=" row justify-content-center">
+                        <div className="col-5 ml-5">
                             <div className="container-fluid">
                                 <div className="row mt-5">
                                     <img src={cloud2} className="cloud-2-desk col-3"></img>
-                                    <img src={airport} className="airport col-4 mt-5"></img>
+                                    <img src={airport} className="airport col-5 mt-5"></img>
                                     <img src={cloud1} className="cloud-1-desk col-3"></img>
                                     {/* <img src={cloud3} className="cloud-3-desk col-3"></img> */}
-
-
                                 </div>
                             </div>
                         </div>
-                        <div class="col-5 mt-4">
+                        <div class="col-4 mt-4">
                             <h1 className="title-header mt-5">חממה טכנולוגית AGILE בשיטת</h1>
                             <p className="text mt-4 ">
                                 Leader.Codes מקבוצת StartUpPlan ברוכים הבאים ל ומערכות CMS, אנחנו מתמחים בפיתוח תוכנה, אפליקציות, מערכות .השיטה שלנו מאפשרת לחסוך של עד 50% מהוצאות הפיתוח. CRM
                             </p>
                             <div className="row justify-content-end mt-4">
-                                <button className="appointment mt-3 mr-4 "  >קבע פגישת ייעוץ חינם</button>
-                                <button className="read-more-about mt-3 mr-4"  >קרא עוד אודות השיטה</button>
+                                <a href="#connectUs"> <button className="appointment mt-3 mr-4 "  >קבע פגישת ייעוץ חינם</button></a>
+                                {/* <button className="read-more-about mt-3 mr-4"  >קרא עוד אודות השיטה</button> */}
                             </div>
                         </div>
                     </div>
@@ -93,7 +91,7 @@ export default function HomePageDesk() {
             </div>
             <div className=" container-fluid desk-part-2" id="agile">
                 <div className=" mt-5 row justify-content-center row align-items-center">
-                    <h2 className="agile mt-2 col-12">השיטה שלנו</h2>
+                    <h2 className="agile mt-5 col-12">השיטה שלנו</h2>
                     <div className="mt-5 col-3">
                         <img src={magnifier1} ></img>
                     </div>
@@ -122,8 +120,8 @@ export default function HomePageDesk() {
                     </div>
                 </div>
                 <div className="row part-2-a mt-5 ">
-                    <img src={room2} className="col-6 mt-5"></img>
-                    <div className="offset-1 col-4 steps ">
+                    <img src={room2} className="col-6 mt-5 pt-5"></img>
+                    <div className="offset-1 col-4 steps mt-5 ">
                         <h2>1</h2>
                         <h3>מסמנים מטרה</h3>
                         <div className="border mt-4 w-25 "></div>
@@ -155,17 +153,17 @@ export default function HomePageDesk() {
                         <p>בהתאם לשיטת העבודה האיג’איילית שלנו, תהליכי הפיתוח שלנו במקביל - ניפוי ותיקון שגיאות [Debugging] ותהליכי בקרת איכות מחמירים [Quality Assurance].
                             בספרינט הזה אנחנו מאתרים כשלים ותקלות שעלולים לפגוע בחווית השימוש ובשביעות הרצון של המשתמשים. אנחנו מפתחים ובה בעת מוודאים שהמוצר יגיע אליכם כשהו עובד וללא כל תקלה.</p>
                     </div>
-                    <div class="col-4 mt-5">
+                    <div class="col-5 mt-5">
                         <img src={room3}></img>
                     </div>
                 </div>
             </div>
             <div className="container-fluid desk-part-4">
                 <div class="row justify-content-around part-a">
-                    <div class="col-4  room-4">
+                    <div class="col-5  room-4 mt-5">
                         <img src={room4}></img>
                     </div>
-                    <div className=" col-6  steps">
+                    <div className=" col-5  steps mt-5">
                         <h2>3</h2>
                         <h3>!להדק חגורות, אנחנו ממריאים</h3>
                         <div className="border mt-4 w-25 "></div>
@@ -176,12 +174,11 @@ export default function HomePageDesk() {
                             <div className="circle"></div>
                             <h4>רספונסיביות</h4>
                         </div>
-                        <p className="w-75">המערכות שלכם חייבות להיות גמישות ובטוחות.
+                        <p className="">המערכות שלכם חייבות להיות גמישות ובטוחות.
                         הן צריכות לתפקד באופן מושלם בכל מצב נתון ולהתאים את עצמן אוטומטית לכל סוגי המחשבים, המסכים ובכל הרזולוציות. כמו כן הן צריכות להיות עמידות של בפני התקפות זדוניות,
                           גנבת מידע וניצול לרעה. אל דאגה, אנחנו דואגים שהכל יהיה מוכן להמראה.</p>
                     </div>
                 </div>
-                {/* <img className="music" src={music}></img> */}
 
                 <div id="tecnologics" className="row justify-content-center learn-languages ">
                     <h2 className="col-12">טכנולוגיות</h2>
@@ -314,16 +311,17 @@ export default function HomePageDesk() {
             </div>
             <div className=" container-fluid desk-part-6">
                 <div className="row justify-content-center row align-items-center know-me aplicate">
-                    <div className=" col-5">
-                        <img src={phone}></img>
-                    </div>
-                    <div className="offset-1 col-3">
+
+                    <div className=" col-4">
                         <img className="mb-4" src={knowMeLogo}></img>
                         <h1 >אינדקס B2B</h1>
                         <p className="mt-2">. הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן ,
                         בחודש הזה אנחנו יוצרים את התבנית.
                         מאפיינים מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם .כל הפונקציות של הסטארט-אפ שלכם
                         </p>
+                    </div>
+                    <div className=" col-5">
+                        <img src={phone}></img>
                     </div>
                 </div>
             </div>
@@ -435,7 +433,7 @@ export default function HomePageDesk() {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid desk-part-14">
+            <div className="container-fluid desk-part-14" id="connectUs">
                 <div className="row justify-content-center  pt-5">
                     <div className="col-4 mt-5 pt-5">
                         <img className="boy mt-5 " src={cup}></img>
