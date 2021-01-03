@@ -186,41 +186,41 @@ export default function HomePageDesk() {
                 </div>
 
                 <div className="row justify-content-center icon">
-                    <ul className="col-12 mr-3">
-                        <li >
+                    <ul className="">
+                        <li className="col-2" >
                             <img src={sqlIcon}></img>
-                            <h3>my sql</h3>
+                            <p>my sql</p>
                         </li>
-                        <li >
+                        <li className="col-2">
                             <img src={express}></img>
-                            <h3>Express</h3>
+                            <p>Express</p>
                         </li>
-                        <li>
+                        <li className="col-2">
                             <img src={angular}></img>
-                            <h3>Angular</h3>
+                            <p>Angular</p>
                         </li>
-                        <li>
+                        <li className="col-2">
                             <img src={node}></img>
-                            <h3>nodeJS</h3>
+                            <p>nodeJS</p>
                         </li>
                     </ul>
-                    <ul className="col-12 ">
-                        <li >
+                    <ul >
+                        <li className="col-2">
                             <img src={react}></img>
-                            <h3>React</h3>
+                            <p>React</p>
                         </li>
-                        <li>
+                        <li className="col-2">
                             <img src={js}></img>
-                            <h3>java script</h3>
+                            <p>java script</p>
                         </li>
-                        <li>
+                        <li className="col-2">
                             <img src={mongo}></img>
-                            <h3>mongoDB</h3>
+                            <p>mongoDB</p>
                         </li>
 
-                        <li>
+                        <li className="col-2">
                             <img src={jQuery}></img>
-                            <h3>jQuery</h3>
+                            <p>jQuery</p>
                         </li>
 
                     </ul>
@@ -310,7 +310,7 @@ export default function HomePageDesk() {
                 <div className="border col-1"></div> */}
             </div>
             <div className=" container-fluid desk-part-6">
-                <div className="row justify-content-center row align-items-center know-me aplicate">
+                <div className="row justify-content-center row align-items-center know-me aplicate m-5">
 
                     <div className=" col-4">
                         <img className="mb-4" src={knowMeLogo}></img>
@@ -326,7 +326,7 @@ export default function HomePageDesk() {
                 </div>
             </div>
             <div className=" container-fluid desk-part-7">
-                <div className="row justify-content-center row align-items-center box aplicate">
+                <div className="row justify-content-center row align-items-center box aplicate m-5">
                     <div className="col-3">
                         <div className="logo mb-4">
                             {/* <h2 className="mr-4">Box</h2> */}
@@ -338,17 +338,17 @@ export default function HomePageDesk() {
                         מאפיינים מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם .כל הפונקציות של הסטארט-אפ שלכם
                         </p>
                     </div>
-                    <div className="offset-1 col-5">
+                    <div className="offset-1 col-5 p-5">
                         <img src={boxLogo}></img>
                     </div>
                 </div>
             </div>
             <div className=" container-fluid desk-part-8">
-                <div className="row justify-content-center row align-items-center funnel aplicate">
-                    <div className="col-5">
+                <div className="row justify-content-around funnel aplicate m-5">
+                    <div className="col-5 p-5">
                         <img src={leaderFunnelLogo}></img>
                     </div>
-                    <div className="offset-1 col-3">
+                    <div className="offset-1 col-3 mt-5">
                         <div className="logo mb-4">
                             {/* <h2>Leader Funnel</h2> */}
                             <img src={funnel}></img>
@@ -362,7 +362,7 @@ export default function HomePageDesk() {
                 </div>
             </div>
             <div className=" container-fluid desk-part-9">
-                <div className="row justify-content-center row align-items-center hub aplicate">
+                <div className="row justify-content-center row align-items-center hub aplicate m-5">
                     <div className="col-3">
                         <div className="logo mb-4">
                             {/* <h2 className="mr-4">Hub</h2> */}
@@ -374,14 +374,15 @@ export default function HomePageDesk() {
                         מאפיינים מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם .כל הפונקציות של הסטארט-אפ שלכם
                         </p>
                     </div>
-                    <div className="offset-1 col-5">
+                    <div className="offset-1 col-5 p-5">
                         <img src={hubLogo}></img>
                     </div>
                 </div>
             </div>
             <div className=" container-fluid desk-part-10">
-                <div className="row justify-content-center row align-items-center time aplicate">
-                    <div className="col-5">
+                <div className="row justify-content-around row align-items-center time aplicate m-5 ">
+
+                    <div className="col-5 p-5">
                         <img src={timeLogo}></img>
                     </div>
                     <div className="offset-1 col-3">
@@ -401,7 +402,6 @@ export default function HomePageDesk() {
                 <div className="row justify-content-center row align-items-center stories aplicate">
                     <div className="col-3">
                         <div className="logo mb-4">
-                            {/* <h2 className="mr-4">Stories</h2> */}
                             <img src={stories}></img>
                         </div>
                         <h1 >אינדקס B2B</h1>
@@ -410,17 +410,17 @@ export default function HomePageDesk() {
                         מאפיינים מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם .כל הפונקציות של הסטארט-אפ שלכם
                         </p>
                     </div>
-                    <div className="offset-1 col-5">
+                    <div className="offset-1 col-5 p-5">
                         <img src={storiesLogo}></img>
                     </div>
                 </div>
             </div>
             <div className=" container-fluid desk-part-12">
-                <div className="row justify-content-center row align-items-center quote aplicate">
-                    <div className="col-5">
+                <div className="row justify-content-around row align-items-center quote aplicate">
+                    <div className="col-5 p-5">
                         <img src={quoteLogo}></img>
                     </div>
-                    <div className="offset-1 col-3">
+                    <div className=" col-3">
                         <div className="logo mb-4">
                             {/* <h2>quote</h2> */}
                             <img src={quote}></img>
@@ -446,11 +446,11 @@ export default function HomePageDesk() {
                         <input type="text" id="email" name="lastname"></input><br></br>
                         <label for="your-massage">ההודעה שלך </label><br></br>
                         <input type="text" id="your-massage" name="your-massage"></input><br></br>
-                        <button className="call-us"></button>
+                        <button className="call-us mt-4"></button>
 
                     </div>
                     <div className="container-fluid " >
-                        <div className="row justify-content-center details  ">
+                        <div className="row justify-content-center details  mb-5">
                             <img src={location}></img>
                             <p>בר כוכבא 4 בני ברק</p>
                             <img src={phoneIcon}></img>

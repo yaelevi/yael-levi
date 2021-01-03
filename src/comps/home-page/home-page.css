@@ -46,23 +46,20 @@
 }
 .desk-part-1{
     background: url('../../img/desk-part-1.png');
-    height: 100vh;
 }
 .desk-part-2{
     background-image: url('../../img/Group 27128.png');
-    height: 210vh;
+    /* height: 210vh; */
     background-position: center;
     overflow-x: hidden;
     overflow-y: hidden;
   }
 .desk-part-3{
     background: url('../../img/desk-part-3.png');
-    height: 120vh;
     
 }
 .desk-part-4{
     background: url('../../img/part-4-update.png');
-    height: 270vh;
 }
 .desk-part-6, .desk-part-10{
   background-color: #FCF5F5;
@@ -375,11 +372,11 @@ opacity: 1;
       color: #210554;
     }
     
-    .icon >ul>li>h3{
+    .icon >ul>li>p{
   
-      font-size: 30px !important;
+      font-size: 20px !important;
       font-weight: 400 !important;
-      margin-top: 10px !important;  
+      /* margin-top: 10px !important;   */
      }
     li{
       list-style-type: none;
@@ -413,7 +410,7 @@ opacity: 1;
       color: #57B3E1 !important;
      }
      .box img:nth-child(1),.funnel img, .hub img ,.time img ,.stories img,.quote img{
-      margin-top: 15vh;
+      /* margin-top: 15vh; */
      }
      .logo {
       margin-right: 0;
@@ -683,7 +680,7 @@ opacity: 1;
     height: 6vh;
     z-index: 3;
     position: fixed !important;
-    bottom:2vh;
+    /* bottom:2vh; */
     
   }
 
@@ -859,7 +856,7 @@ opacity: 1;
         height: 120vh;
       }
       .box img:nth-child(1) ,.time img{
-        margin-top: 0vh;
+        /* margin-top: 0vh; */
        }
        .box h3 {
          text-align: center;
