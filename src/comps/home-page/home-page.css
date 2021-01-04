@@ -37,7 +37,7 @@
   height: 6vh;
   z-index: 3; 
   /* position: fixed ;  */
-  bottom:2vh;
+  /* bottom:2vh; */
  
 }
 
@@ -179,7 +179,7 @@ opacity: 1;
       font-size: 60px;
      }
      .learn-languages h2{
-      font-size: 70px; 
+      font-size: 60px; 
      }
      .steps h2{
        font-size: 150px !important;
@@ -224,11 +224,11 @@ opacity: 1;
     }
     .peper-card h2 {
       font-weight: 600;
-      font-size: 60px; 
+      font-size: 55px; 
     }
     .peper-card p{
       text-align: center !important;
-      font-size: 20px;
+      font-size: 15px;
     }
     .desk-part-3 .circle{
       background-color: #FFFFFF;
@@ -246,9 +246,7 @@ opacity: 1;
     .desk-part-14 h1{
      color: #FFFFFF;
     }
-    .learn-languages{
-      margin-top:40vh;
-    }
+   
     input[type=text]{
       color:white;
       direction: rtl;
@@ -259,6 +257,10 @@ opacity: 1;
     }  
     .desk-part-3 .steps p, .desk-part-3 .steps h1 {
      color:#FFFFFF;
+    }
+    .steps h1{
+      font-size: 60px !important;
+      font-weight: 700;
     } 
     .steps-mobile h1 {
       font-weight: bold;
@@ -390,7 +392,7 @@ opacity: 1;
        background: url('../../img/background-card-peper.png');
        background-size: contain;
        background-repeat: no-repeat; 
-       height: 30vh;
+       /* height: 30vh; */
      }
      .know-me h1{
       color: #571092;
@@ -523,8 +525,8 @@ opacity: 1;
     }
   
     .details{
-      margin-top:15vh;
-      display: inline;
+      /* margin-top:15vh; */
+      display: inline-block;
     }
     
     .details img{
@@ -736,22 +738,21 @@ opacity: 1;
     float: right;
 
   }
- 
+/*  
   .peper-card h2 {
     font-weight: 600;
     text-align: center !important;
-    font-size: 35px; 
-  }
+    font-size: 25px; 
+  } */
   .peper-card p{
     text-align: center !important;
     font-size: 12px;
     letter-spacing: 0vh;
     text-transform: uppercase;
-
   }
-  .peper-card{
+  /* .peper-card{
     height: 15vh !important;
-  }
+  } */
 
  
   .screen-1{
@@ -870,13 +871,13 @@ opacity: 1;
       width: 75%;
       }
       .desk-part-7,.desk-part-8,.desk-part-10{
-        height: 130vh;
+        /* height: 130vh; */
       }  
       .desk-part-7{
-        height: 150vh;
+        /* height: 150vh; */
       }  
       .desk-part-8,.desk-part-9,.desk-part-11,.desk-part-12{
-        height: 120vh;
+        /* height: 120vh; */
       }
       .box img:nth-child(1) ,.time img{
         /* margin-top: 0vh; */
@@ -953,7 +954,7 @@ font-size: x-large;
 
 }
 .desk-part{
-  height: 120vh;
+  /* height: 120vh; */
 }
 .card-list-yellow {
 background-color: #fdffcde6;
