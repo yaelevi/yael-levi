@@ -54,6 +54,7 @@ import nodeIcon from '../../img/nodeIcon.png'
 import angularIcon from '../../img/angularIcon.png'
 import jqueryIcon from '../../img/jqueryIcon.png'
 import sqlIcon from '../../img/sqlIcon.png'
+import callPhone from '../../mobile-img/call-btn.png'
 // import call from 'react-native-phone-call'
 
 const args = {
@@ -81,16 +82,15 @@ export default function HomePageMobile() {
                         <div className="menue pt-4 d-block d-sm-none">
                             <ul className=" container-fluid mt-5">
                                 <img src={logoMenue} className="ml-5"></img>
-                                {/* <a href="#agile" onClick={handleClose}> */}
-                                <li className="row justify-content-center mt-4 ">AGILE שיטת</li>
+                                <li className="row justify-content-center mt-4 "><a href="#agile">AGILE שיטת</a></li>
                                 <li className="row justify-content-center mt-4 ">טכנולוגיות</li>
                                 <li className="row justify-content-center mt-4 ">פתרונות</li>
                                 <li className="row justify-content-center mt-4 ">פרוייקטים</li>
                                 <li className="row justify-content-center mt-4 ">שירות לקוחות</li>
                             </ul>
                         </div>
-
-                    </Modal></div>
+                    </Modal>
+                </div>
                 <nav className="navbar row justify-content-between ">
                     <img className="col-5" src={logo} ></img>
                     <button className="btn-nav" onClick={handleShow} >
@@ -107,14 +107,14 @@ export default function HomePageMobile() {
                             {/* <img src={cloud1} className=" col-4 cloud1"></img> */}
 
                         </div>
-                        <p className="text mt-2 px-2">
+                        <p className="text my-3 mb-5 px-2">
                             ברוכים הבאים ל StartUpPlan מקבוצת Leader.Codes אנחנו מתמחים בפיתוח תוכנה, אפליקציות, מערכות CMS,
                             ומערכות CRM. השיטה שלנו מאפשרת לחסוך של עד 50% מהוצאות הפיתוח.
-                            </p>
+                        </p>
                     </div>
-                    <button className="px-3 mb-4 read-more-about" >קרא עוד אודות השיטה</button>
-                    <button className="px-3 appointment" >קבע פגישת ייעוץ חינם</button>
-                    {/* <button className="px-3 appointment" onClick={()=>{Linking.openURL('tel:0548407163');}}>קבע פגישת ייעוץ חינם</button> */}
+                    {/* <button className="px-3 mb-4 read-more-about" >קרא עוד אודות השיטה</button> */}
+                    {/* <button className="px-3 appointment" ><a href="tel:+0548407163">קבע פגישת ייעוץ חינם</a></button> */}
+                    <a href="tel:+0548407163"> <img className="call-icon" src={callPhone}></img></a>
                 </div>
             </div>
             <div className="container-fluid mobile-part-2" id="agile" >
@@ -357,7 +357,7 @@ export default function HomePageMobile() {
                 <div className="card-flip">
                     <div className="row  justify-content-center mt-3">
                         <div className="card-list-paper w-50 ">
-                            <img class="ml-2 mt-2" src={circleCard} alt="Card image cap"></img>
+                            <img class=" mt-2" src={circleCard} alt="Card image cap"></img>
                             <div class="">
                                 <p class="card-title-paper mt-3 ">שרתים ואחסון מידע</p>
                                 <button href="#" className="read-more mr-4 mt-0 px-3 w-50">קרא עוד</button>
@@ -367,7 +367,7 @@ export default function HomePageMobile() {
 
                     <div className="row  justify-content-center mt-3">
                         <div className="card-list-paper  w-50 ">
-                            <img class="ml-5 mt-3" src={lockCard} alt="Card image cap"></img>
+                            <img class=" mt-3" src={lockCard} alt="Card image cap"></img>
                             <div class="">
                                 <p class="card-title-paper mt-3">סייבר</p>
                                 <button href="#" className="read-more mr-4 mt-0 px-3 w-50">קרא עוד</button>
@@ -375,8 +375,9 @@ export default function HomePageMobile() {
                         </div>
                     </div>
                     <div className="row  justify-content-center mt-3">
+
                         <div className="card-list-paper w-50 ">
-                            <img class="ml-5 mt-4" src={computerCard} alt="Card image cap"></img>
+                            <img class=" mt-4" src={computerCard} alt="Card image cap"></img>
                             <div class="">
                                 <p class="card-title-paper mt-3">פיתוח</p>
                                 <button href="#" className="read-more mr-4 mt-0 px-3 w-50">קרא עוד</button>
@@ -385,7 +386,7 @@ export default function HomePageMobile() {
                     </div>
                     <div className="row  justify-content-center mt-3">
                         <div className="card-list-paper w-50 ">
-                            <img class="mr-5 mt-2" src={chartCard} alt="Card image cap"></img>
+                            <img class=" mt-2" src={chartCard} alt="Card image cap"></img>
                             <div class=" ">
                                 <p class="card-title-paper ">CX</p>
                                 <button href="#" className="read-more mr-4 mt-0 px-3 w-50">קרא עוד</button>
@@ -396,8 +397,8 @@ export default function HomePageMobile() {
             </div>
             <div className=" container-fluid desk-part-7 box mobile aplicate">
                 <h3 className="my-5">פרויקטים חמים מהתנור</h3>
-                <div className="row justify-content-center row align-items-center">
-                    <img className="col-4 pt-0 mt-4" src={boxIcon}></img>
+                <div className="row justify-content-center row align-items-center mt-4">
+                    <img className="col-4 pt-0 " src={boxIcon}></img>
                 </div>
                 <div className="row justify-content-center row align-items-center">
                     <h2 className="col-4">Box</h2>
@@ -408,7 +409,7 @@ export default function HomePageMobile() {
                         <p className="mt-2">לוג עסקי המנהל את כלל הפניות וההתראות מכל ערוצי השיווק - דפי הנחיתה, הטפסים, הצ’אט בוטים ועוד. מאגר ניהול קשרי לקוחות (CRM) חדשני שבו כל פניית לקוח [ליד חדש] מתעדכנת באופן חכם ואוטומטי במערכת,
                         כחלק מקהל הלקוחות, ההולך וגדל. הבוקס שכולל אפשרויות פלטור ומיון משוכללות הוא למעשה כלי תקשורת רב ערוצי לתקשורת פנים ארגונית מושלמת ובהירה. תיבת לידר היא חדר הבקרה למשווק.   </p>
                     </div>
-                    <div className=" col-12">
+                    <div className="my-5 col-12">
                         <img src={boxLogo}></img>
                     </div>
                 </div>
@@ -427,7 +428,7 @@ export default function HomePageMobile() {
                         בחודש הזה אנחנו יוצרים את התבנית. מאפיינים, מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם כל הפונקציות של הסטארט-אפ שלכם.
                         </p>
                     </div>
-                    <div className=" col-12">
+                    <div className="my-5 col-12">
                         <img src={funnelLogo}></img>
                     </div>
                 </div>
@@ -446,7 +447,7 @@ export default function HomePageMobile() {
                         בחודש הזה אנחנו יוצרים את התבנית. מאפיינים, מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם כל הפונקציות של הסטארט-אפ שלכם.
                         </p>
                     </div>
-                    <div className=" col-12">
+                    <div className="my-5 col-12">
                         <img src={hubLogo}></img>
                     </div>
                 </div>
@@ -464,7 +465,7 @@ export default function HomePageMobile() {
                         <p className="mt-2">הפתגם ‘זמן שווה כסף’ הוא טעות. לכסף אין סוף אבל הזמן הוא המשאב המוגבל והיקר של הצוות ושל הפרויקטים. יומן חכם ומרובה אפשרויות. כמו פגישות צוות הכוללות מינוי אחראי ודו”ח מסכם. קביעת אירועים שמייצרת באופן אוטומטי דף נחיתה עם וידאו ואפשרויות מכירת כרטיסים ועוד ועוד. היומן משתלב עם כל שאר המערכות ומאפשר לנהל את הלידים, הצוותים, הפגישות, האירועים והמטרות העיסקיות.
                         </p>
                     </div>
-                    <div className=" col-12">
+                    <div className="my-5 col-12">
                         <img src={timeLogo}></img>
                     </div>
                 </div>
@@ -482,7 +483,7 @@ export default function HomePageMobile() {
                         <p className="mt-2">
                             הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן. בחודש הזה אנחנו יוצרים את התבנית. מאפיינים, מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם כל הפונקציות של הסטארט-אפ שלכם.                        </p>
                     </div>
-                    <div className=" col-12">
+                    <div className="my-5 col-12">
                         <img src={storiesLogo}></img>
                     </div>
                 </div>
@@ -500,7 +501,7 @@ export default function HomePageMobile() {
                         <p className="mt-2">
                             הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן. בחודש הזה אנחנו יוצרים את התבנית. מאפיינים, מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם כל הפונקציות של הסטארט-אפ שלכם.                        </p>
                     </div>
-                    <div className=" col-12">
+                    <div className="my-5 col-12">
                         <img src={quoteLogo}></img>
                     </div>
                 </div>

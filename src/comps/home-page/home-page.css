@@ -12,7 +12,7 @@
     height: 15vh ;
 }
  
-.appointment, .read-more-about{
+.appointment,.read-more-about{
   border: 1px solid #FFFFFF;
   font: normal normal medium 17px/23px Roboto;
   border-radius: 5px;
@@ -20,24 +20,27 @@
   background-color: transparent;
   height: 6vh;
   }
+ 
   .read-more-about{
     background-color: #FF0686;
     border:none !important;
   }
 
 
-.appointment:focus{
+/* .call-icon:focus{
     outline: 0;
-  }
+  } */
 
 
-.appointment{
-  /* background-color: #210554; */
-  height: 6vh;
-  z-index: 3; 
-  /* position: fixed ;  */
-  /* bottom:2vh; */
- 
+
+.call-icon{
+  z-index: 3;
+  position: fixed !important; 
+  bottom: 5vh;
+  right: 5vh;
+}
+.call-icon:hover{
+  opacity: 0.5;
 }
 
 .text{
@@ -350,11 +353,11 @@ opacity: 1;
     background-repeat: no-repeat;
 
   }
-  .screen-5{
+  /* .screen-5{
     height: 110vh;
     background: url('../../img/screen-5.png');
     background-repeat: no-repeat;
-  }
+  } */
   .screen-5 div{
     margin-top: 70vh;
   }
@@ -596,7 +599,7 @@ opacity: 1;
       100%{bottom: 0px}
     }
     .card-list-paper{
-      height: 35vh !important;
+      /* height: 35vh !important; */
     }
     .read-more{
       margin-top:2vh; 
@@ -623,7 +626,7 @@ opacity: 1;
     }
 
 .card-list-paper{
-  height: 35vh;
+  /* height: 35vh; */
 }
 .read-more{
   margin-top:2vh; 
@@ -677,14 +680,7 @@ opacity: 1;
     /* text-align: center; */
   }
   
-  .appointment{
-    background-color: #210554;
-    height: 6vh;
-    z-index: 3;
-    position: fixed !important;
-    /* bottom:2vh; */
-    
-  }
+  
 
   .our-method{
     text-align: center;
@@ -692,7 +688,7 @@ opacity: 1;
   }
   .mvp{
     font-weight:500;
-    font-size:700%;
+    ont-size:700%;
   }
  
   h2{
@@ -924,11 +920,16 @@ background-color: #e4e8fc;
 .card-list-red{
 background-color: rgb(250, 231, 234);
 }
-.card-list-paper, .card-list-2, .card-list-yellow, .card-list-blue, .card-list-red{
+ .card-list-2, .card-list-yellow, .card-list-blue, .card-list-red{
 border:1px solid rgb(255, 255, 255);
 height: 38vh;
 margin-left: 0.5vw;
 }
+.card-list-paper{
+  border:1px solid rgb(255, 255, 255);
+  margin-left: 0.5vw;
+}
+
 .card-list-paper{
 background-color: #F1F1F1;
 
