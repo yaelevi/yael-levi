@@ -89,8 +89,8 @@ export default function HomePageDesk() {
                     </div>
                 </div>
             </div>
-            <div className=" container-fluid desk-part-2" id="agile">
-                <div className=" mt-5 row justify-content-center row align-items-center">
+            <div className=" conainer-fluid desk-part-2" id="agile">
+                <div clastsName=" mt-5 row justify-content-center row align-items-center">
                     <h2 className="agile mt-5 col-12">השיטה שלנו</h2>
                     <div className="mt-5 col-3">
                         <img src={magnifier1} ></img>
