@@ -244,9 +244,7 @@ opacity: 1;
       background-color: #FF0686;
       border: none !important;
     }
-    .desk-part-4 .steps,  .desk-part-4 .room-4{
-    /* top: 20vh; */
-    }
+  
     .desk-part-3 .p-1{
       color: #FFFFFF;
     }
@@ -418,7 +416,7 @@ opacity: 1;
      .logo {
       margin-right: 0;
       /* display:block; */
-      float: right;
+      /* float: right; */
      }
    
      .funnel h1{
@@ -907,7 +905,7 @@ font-size: x-large;
 
 }
 .desk-part{
-  height: 120vh;
+  /* height: 120vh; */
 }
 .card-list-yellow {
 background-color: #fdffcde6;

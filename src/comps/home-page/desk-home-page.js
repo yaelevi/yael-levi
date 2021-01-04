@@ -68,7 +68,7 @@ export default function HomePageDesk() {
                     <div class=" row justify-content-center">
                         <div className="col-5 ml-5">
                             <div className="container-fluid">
-                                <div className="row mt-5">
+                                <div className="row mt-5 mb-5">
                                     <img src={cloud2} className="cloud-2-desk col-3"></img>
                                     <img src={airport} className="airport col-5 mt-5"></img>
                                     <img src={cloud1} className="cloud-1-desk col-3"></img>
@@ -76,7 +76,7 @@ export default function HomePageDesk() {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 mt-4">
+                        <div class="col-4 mt-5">
                             <h1 className="title-header mt-5">חממה טכנולוגית AGILE בשיטת</h1>
                             <p className="text mt-4 ">
                                 Leader.Codes מקבוצת StartUpPlan ברוכים הבאים ל ומערכות CMS, אנחנו מתמחים בפיתוח תוכנה, אפליקציות, מערכות .השיטה שלנו מאפשרת לחסוך של עד 50% מהוצאות הפיתוח. CRM
@@ -160,9 +160,7 @@ export default function HomePageDesk() {
             </div>
             <div className="container-fluid desk-part-4">
                 <div class="row justify-content-around part-a">
-                    <div class="col-5  room-4 mt-5">
-                        <img src={room4}></img>
-                    </div>
+                    <img src={room4} class="col-6  mt-5 "></img>
                     <div className=" col-5  steps mt-5">
                         <h2>3</h2>
                         <h3>!להדק חגורות, אנחנו ממריאים</h3>
@@ -328,22 +326,7 @@ export default function HomePageDesk() {
                 {/* <h2 id="projects" className="projects mt-5">פרויקטים חמים מהתנור</h2>
                 <div className="border col-1"></div> */}
             </div>
-            <div className=" container-fluid desk-part-6">
-                <div className="row justify-content-center row align-items-center know-me aplicate m-5">
-
-                    <div className=" col-4">
-                        <img className="mb-4" src={knowMeLogo}></img>
-                        <h1 >אינדקס B2B</h1>
-                        <p className="mt-2">. הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן ,
-                        בחודש הזה אנחנו יוצרים את התבנית.
-                        מאפיינים מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם .כל הפונקציות של הסטארט-אפ שלכם
-                        </p>
-                    </div>
-                    <div className=" col-5">
-                        <img src={phone}></img>
-                    </div>
-                </div>
-            </div>
+   
             <div className=" container-fluid desk-part-7">
                 <div className="row justify-content-center row align-items-center box aplicate m-5">
                     <div className="col-3">
@@ -449,6 +432,22 @@ export default function HomePageDesk() {
                             הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן.
                             בחודש הזה אנחנו יוצרים את התבנית. מאפיינים,
                           מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם כל הפונקציות של הסטארט-אפ שלכם. </p>
+                    </div>
+                </div>
+            </div>
+            <div className=" container-fluid desk-part-6">
+                <div className="row justify-content-center row align-items-center know-me aplicate m-5">
+
+                    <div className=" col-4">
+                        <img className="mb-4" src={knowMeLogo}></img>
+                        <h1 >אינדקס B2B</h1>
+                        <p className="mt-2">. הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן ,
+                        בחודש הזה אנחנו יוצרים את התבנית.
+                        מאפיינים מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם .כל הפונקציות של הסטארט-אפ שלכם
+                        </p>
+                    </div>
+                    <div className=" col-5">
+                        <img src={phone}></img>
                     </div>
                 </div>
             </div>
