@@ -273,7 +273,7 @@ export default function HomePageDesk() {
                                     <img class="ml-2 mt-2" src={circleCard} alt="Card image cap"></img>
                                     <div class="">
                                         <p class="card-title-paper mt-3 ">שרתים ואחסון מידע</p>
-                                        <button href="#" className="read-more mr-4 mt-0">קרא עוד</button>
+                                        {/* <button href="#" className="read-more mr-4 mt-0">קרא עוד</button> */}
                                     </div>
                                 </div>
                                 <div className="card-back ">
@@ -281,27 +281,46 @@ export default function HomePageDesk() {
                                 </div>
                             </div>
                         </div>
-                        <div className="card-list-paper  col-2 ">
-                            <img class="ml-5 mt-3" src={lockCard} alt="Card image cap"></img>
-                            <div class="">
-                                <p class="card-title-paper mt-3">סייבר</p>
-                                <button href="#" className="read-more mr-4 mt-0">קרא עוד</button>
+                        <div className="  card-list-paper col-2">
+                            <div className="card-flip">
+                                <div className="card-front ">
+                                    <img class="ml-2 mt-2" src={lockCard} alt="Card image cap"></img>
+                                    <div class="">
+                                        <p class="card-title-paper mt-3 ">סייבר</p>
+                                        {/* <button href="#" className="read-more mr-4 mt-0">קרא עוד</button> */}
+                                    </div>
+                                </div>
+                                <div className="card-back ">
+                                    <h3>fdsff</h3>
+                                </div>
                             </div>
                         </div>
-                        <div className="card-list-paper  col-2 ">
-                            <img class="ml-5 mt-4" src={computerCard} alt="Card image cap"></img>
-                            <div class="">
-                                <p class="card-title-paper mt-3">פיתוח</p>
-                                <button href="#" className="read-more mr-4 mt-0">קרא עוד</button>
+                        <div className="  card-list-paper col-2">
+                            <div className="card-flip">
+                                <div className="card-front ">
+                                    <img class="ml-2 mt-2" src={computerCard} alt="Card image cap"></img>
+                                    <div class="">
+                                        <p class="card-title-paper mt-3 ">פיתוח</p>
+                                        {/* <button href="#" className="read-more mr-4 mt-0">קרא עוד</button> */}
+                                    </div>
+                                </div>
+                                <div className="card-back ">
+                                    <h3>fdsff</h3>
+                                </div>
                             </div>
                         </div>
-
-
-                        <div className="card-list-paper col-2 mr-5 mt-1">
-                            <img class="mr-5 mt-2" src={chartCard} alt="Card image cap"></img>
-                            <div class="card-body ">
-                                <p class="card-title-paper m-0">CX</p>
-                                <button href="#" className="read-more mr-4 mt-3 ">קרא עוד</button>
+                        <div className="  card-list-paper col-2">
+                            <div className="card-flip">
+                                <div className="card-front ">
+                                    <img class="ml-2 mt-2" src={chartCard} alt="Card image cap"></img>
+                                    <div class="">
+                                        <p class="card-title-paper mt-3 ">CX</p>
+                                        {/* <button href="#" className="read-more mr-4 mt-0">קרא עוד</button> */}
+                                    </div>
+                                </div>
+                                <div className="card-back ">
+                                    <h3>fdsff</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
