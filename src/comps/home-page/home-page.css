@@ -181,7 +181,7 @@ opacity: 1;
       font-size: 60px;
      }
      .learn-languages h2{
-      font-size: 70px; 
+      font-size: 60px; 
      }
      .steps h2{
        font-size: 150px !important;
@@ -231,11 +231,11 @@ opacity: 1;
     }
     .peper-card h2 {
       font-weight: 600;
-      font-size: 60px; 
+      font-size: 55px; 
     }
     .peper-card p{
       text-align: center !important;
-      font-size: 20px;
+      font-size: 15px;
     }
     .desk-part-3 .circle{
       background-color: #FFFFFF;
@@ -251,9 +251,7 @@ opacity: 1;
     .desk-part-14 h1{
      color: #FFFFFF;
     }
-    .learn-languages{
-      margin-top:40vh;
-    }
+   
     input[type=text]{
       color:white;
       direction: rtl;
@@ -264,6 +262,10 @@ opacity: 1;
     }  
     .desk-part-3 .steps p, .desk-part-3 .steps h1 {
      color:#FFFFFF;
+    }
+    .steps h1{
+      font-size: 60px !important;
+      font-weight: 700;
     } 
     .steps-mobile h1 {
       font-weight: bold;
@@ -393,7 +395,7 @@ opacity: 1;
        background: url('../../img/background-card-peper.png');
        background-size: contain;
        background-repeat: no-repeat; 
-       height: 30vh;
+       /* height: 30vh; */
      }
      .know-me h1{
       color: #571092;
@@ -526,8 +528,8 @@ opacity: 1;
     }
   
     .details{
-      margin-top:15vh;
-      display: inline;
+      /* margin-top:15vh; */
+      display: inline-block;
     }
     
     .details img{
@@ -722,22 +724,22 @@ opacity: 1;
     border: none !important;
   }
 
- 
+  
+/*  
   .peper-card h2 {
     font-weight: 600;
     text-align: center !important;
-    font-size: 35px; 
-  }
+    font-size: 25px; 
+  } */
   .peper-card p{
     text-align: center !important;
     font-size: 12px;
     letter-spacing: 0vh;
     text-transform: uppercase;
-
   }
-  .peper-card{
+  /* .peper-card{
     height: 15vh !important;
-  }
+  } */
 
  
   .screen-1{

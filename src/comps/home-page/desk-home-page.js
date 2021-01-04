@@ -178,7 +178,7 @@ export default function HomePageDesk() {
                     </div>
                 </div>
 
-                <div id="tecnologics" className="row justify-content-center learn-languages ">
+                <div id="tecnologics" className="row justify-content-center learn-languages mt-5 pt-5">
                     <h2 className="col-12">טכנולוגיות</h2>
                     <div className="border col-1 my-5"></div>
                 </div>
@@ -223,10 +223,10 @@ export default function HomePageDesk() {
 
                     </ul>
                 </div>
-                <div className="row justify-content-center mt-5">
-                    <div className="col-2 peper-card">
-                        <h2 className="mt-2">AI</h2>
-                        <p>Artificial Intelligence</p>
+                <div className="row ml-5 justify-content-center mt-5">
+                    <div className="col-2 peper-card  ">
+                        <h2 className="mt-2 ">AI</h2>
+                        <p className="">Artificial Intelligence</p>
                     </div>
                     <div className="col-2 mx-5 peper-card">
                         <h2 className="mt-2">BI</h2>
@@ -237,18 +237,19 @@ export default function HomePageDesk() {
                         <p>Lead Generation</p>
                     </div>
                 </div>
-                <div className="row justify-content-center">
+                <div className="row ml-5 justify-content-center mt-3">
                     <div className="col-2 peper-card">
                         <h2 className="mt-2">W&M</h2>
                         <p>Web & Mobile</p>
                     </div>
-                    <div className="col-2 mx-5 peper-card">
+                    <div className="col-2 mx-5
+                     peper-card">
                         <h2 className="mt-2">UX/UI</h2>
-                        <p>User Experience / User Interface</p>
+                        <p>UserExperience/UserInterface</p>
                     </div>
-                    <div className="col-2 peper-card">
+                    <div className="col-2 peper-card mb-5">
                         <h2 className="mt-2">CMS</h2>
-                        <p>custom management system</p>
+                        <p>custom managment system</p>
                     </div>
                 </div>
             </div>
@@ -328,7 +329,7 @@ export default function HomePageDesk() {
             </div>
    
             <div className=" container-fluid desk-part-7">
-                <div className="row justify-content-center row align-items-center box aplicate m-5">
+                <div className="row justify-content-center row align-items-center box aplicate ">
                     <div className="col-3">
                         <div className="logo mb-4">
                             {/* <h2 className="mr-4">Box</h2> */}
@@ -340,7 +341,7 @@ export default function HomePageDesk() {
                         מאפיינים מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם .כל הפונקציות של הסטארט-אפ שלכם
                         </p>
                     </div>
-                    <div className="offset-1 col-5 p-5">
+                    <div className="offset-1 col-5 ">
                         <img src={boxLogo}></img>
                     </div>
                 </div>
@@ -376,7 +377,7 @@ export default function HomePageDesk() {
                         מאפיינים מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם .כל הפונקציות של הסטארט-אפ שלכם
                         </p>
                     </div>
-                    <div className="offset-1 col-5 p-5">
+                    <div className="offset-1 col-5 ">
                         <img src={hubLogo}></img>
                     </div>
                 </div>
@@ -412,7 +413,7 @@ export default function HomePageDesk() {
                         מאפיינים מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם .כל הפונקציות של הסטארט-אפ שלכם
                         </p>
                     </div>
-                    <div className="offset-1 col-5 p-5">
+                    <div className="offset-1 col-5">
                         <img src={storiesLogo}></img>
                     </div>
                 </div>
@@ -467,7 +468,7 @@ export default function HomePageDesk() {
                         <button className="call-us mt-4"></button>
 
                     </div>
-                    <div className="container-fluid " >
+                    <div className="container-fluid mt-5" >
                         <div className="row justify-content-center details  mb-5">
                             <img src={location}></img>
                             <p>בר כוכבא 4 בני ברק</p>
