@@ -54,6 +54,15 @@ import nodeIcon from '../../img/nodeIcon.png'
 import angularIcon from '../../img/angularIcon.png'
 import jqueryIcon from '../../img/jqueryIcon.png'
 import sqlIcon from '../../img/sqlIcon.png'
+// import call from 'react-native-phone-call'
+
+const args = {
+    number: '9093900003', // String value with the number to call
+    prompt: false // Optional boolean property. Determines if the user should be prompt prior to the call 
+}
+
+// call(args).catch(console.error)
+{/* <Text  style={styles.funcNavText}>119</Text> */ }
 
 
 export default function HomePageMobile() {
@@ -74,7 +83,6 @@ export default function HomePageMobile() {
                                 <img src={logoMenue} className="ml-5"></img>
                                 {/* <a href="#agile" onClick={handleClose}> */}
                                 <li className="row justify-content-center mt-4 ">AGILE שיטת</li>
-                                {/* </a> */}
                                 <li className="row justify-content-center mt-4 ">טכנולוגיות</li>
                                 <li className="row justify-content-center mt-4 ">פתרונות</li>
                                 <li className="row justify-content-center mt-4 ">פרוייקטים</li>
@@ -104,13 +112,13 @@ export default function HomePageMobile() {
                             ומערכות CRM. השיטה שלנו מאפשרת לחסוך של עד 50% מהוצאות הפיתוח.
                             </p>
                     </div>
-                    <button className="px-3 read-more-about" >קרא עוד אודות השיטה</button>
-                    <button className="px-3 appointment  " >קבע פגישת ייעוץ חינם</button>
+                    <button className="px-3 mb-4 read-more-about" >קרא עוד אודות השיטה</button>
+                    <button className="px-3 appointment" >קבע פגישת ייעוץ חינם</button>
+                    {/* <button className="px-3 appointment" onClick={()=>{Linking.openURL('tel:0548407163');}}>קבע פגישת ייעוץ חינם</button> */}
                 </div>
             </div>
             <div className="container-fluid mobile-part-2" id="agile" >
                 <div className=" row justify-content-center row align-items-center">
-
                     <h2 className="agile mt-5 col-12">השיטה שלנו</h2>
                     <div className="mt-5 col-12">
                         <img src={magnifier1} ></img>
@@ -141,17 +149,18 @@ export default function HomePageMobile() {
                         <div className="col-10 mt-5">
                             <img src={room1}></img>
                         </div>
-                        <div className=" col-10 mt-5 step-one">
+                        <div className=" col-10 mt-5 mb-3 step-one">
                             <h3>ספרינט ראשון</h3>
                             <h2>מסמנים מטרה</h2>
-                            <div className="border mt-4 w-25 "></div>
-                            <div className="mt-3 h4">
-                                <h4>עיצוב</h4>
-                                <div className="circle"></div>
-                                <h4>תכנון</h4>
-                                <div className="circle"></div>
-                                <h4>אפיון</h4>
-                            </div>
+                            <div className="border my-3 offset-9 w-25 "></div>
+                            <ul className="dh4">
+                                <li className="h4"> <h4>עיצוב</h4></li>
+                                <li className="h4"> <div className="circle"></div></li>
+                                <li className="h4"><h4> תכנון</h4></li>
+                                <li className="h4"><div className="circle"></div></li>
+                                <li className="h4"><h4>אפיון</h4></li>
+                            </ul>
+
                             <p>מלקוחות שלא עברו תהליך אפיון מעמיק עלולים לסיים תהליכי פיתוח עם טעם חמוץ בפה. המתכנתים ואנשי המקצוע לא יצליחו לעשות את העבודה אם הצרכים שלכם לא הובנו במלואם. כדי לספק לכם את הפתרונות המושלמים,
                          אנחנו צריכים להבין את הצרכים והבעיות, הרצונות והדרישות שלכם בצורה הכי מדויקת, בהתאם לכך נתכנן את העבודה ונעצב את חווית המשתמש [UX] ואת הממשק התומך [UI] בהתאם.</p>
                         </div>
@@ -164,17 +173,18 @@ export default function HomePageMobile() {
                     <div className="col-10 mt-5">
                         <img src={room2}></img>
                     </div>
-                    <div className="step-two col-11 mt-0">
+                    <div className="step-two col-11 mt-3 mb-3">
                         <h3>ספרינט שני</h3>
                         <h2>מנועים בכל הכח</h2>
-                        <div className="border mt-4 w-25 "></div>
-                        <div className="mt-5">
-                            <h4>דיבאגינג</h4>
-                            <div className="circle"></div>
-                            <h4>פיתוח</h4>
-                            <div className="circle"></div>
-                            <h4>QA</h4>
-                        </div>
+                        <div className="border my-3 offset-9 w-25 "></div>
+                        <ul className="dh4">
+                            <li className="h4"> <h4>דיבאגינג</h4></li>
+                            <li className="h4"> <div className="circle"></div></li>
+                            <li className="h4"><h4> פיתוח</h4></li>
+                            <li className="h4"><div className="circle"></div></li>
+                            <li className="h4"><h4>QA</h4></li>
+                        </ul>
+
                         <p>בהתאם לשיטת העבודה האיג’איילית שלנו, תהליכי הפיתוח שלנו במקביל - ניפוי ותיקון שגיאות [Debugging] ותהליכי בקרת איכות מחמירים [Quality Assurance].
                             בספרינט הזה אנחנו מאתרים כשלים ותקלות שעלולים לפגוע בחווית השימוש ובשביעות הרצון של המשתמשים. אנחנו מפתחים ובה בעת מוודאים שהמוצר יגיע אליכם כשהו עובד וללא כל תקלה.</p>
 
@@ -184,24 +194,32 @@ export default function HomePageMobile() {
                     <div className="col-10 mt-5">
                         <img src={room3}></img>
                     </div>
-                    <div className="step-three col-11 ">
+                    <div className="step-three col-11 mt-3 ">
                         <h3> ספרינט שלישי</h3>
                         <h2>,!להדק חגורות <br></br>אנחנו ממריאים</h2>
-                        <div className="border mt-4 w-25 "></div>
-                        <div className="mt-5 ab">
+                        <div className="border my-3 offset-9 w-25 "></div>
+                        <ul className="dh4">
+                            <li className="h4"> <h4>דיבאגינג</h4></li>
+                            <li className="h4"> <div className="circle"></div></li>
+                            <li className="h4"><h4> פיתוח</h4></li>
+                            <li className="h4"><div className="circle"></div></li>
+                            <li className="h4"><h4>רספונסיביות</h4></li>
+                        </ul>
+                        {/* <div className=" ab">
                             <h4>בדיקות</h4>
                             <div className="circle"></div>
-                            {/* <div className="circle"></div> */}
+                            <div className="circle"></div>
                             <h4>רספונסיביות</h4>
-                            {/* <h4>בדיקות אבטחה</h4> */}
+                            <h4>בדיקות אבטחה</h4>
                         </div>
                         <div className="ab">
                             <h4>עליה לאויר</h4>
                             <div className="circle"></div>
-                            {/* <div className="circle"></div> */}
+                            <div className="circle"></div>
                             <h4>אבטחה</h4>
-                            {/* <h4>בדיקות אבטחה</h4> */}
-                        </div>
+                            <h4>בדיקות אבטחה</h4>
+                        </div> */}
+
                         <p className="w-75">המערכות שלכם חייבות להיות גמישות ובטוחות.
                         הן צריכות לתפקד באופן מושלם בכל מצב נתון ולהתאים את עצמן אוטומטית לכל סוגי המחשבים, המסכים ובכל הרזולוציות. כמו כן הן צריכות להיות עמידות של בפני התקפות זדוניות,
                           גנבת מידע וניצול לרעה. אל דאגה, אנחנו דואגים שהכל יהיה מוכן להמראה.</p>
@@ -214,7 +232,7 @@ export default function HomePageMobile() {
                     {/* <div className="col-5 mus offset-4">
                         <img src={musical}></img>
                     </div> */}
-                    <div className="container-fluid mt-5">
+                    <div className="container-fluid mt-0">
                         <h1 className="tecnolgic">טכנולוגיות</h1>
                         <div className="row justify-content-center mt-4">
                             <img className="lan-icon" src={expressIcon}></img>
@@ -231,7 +249,7 @@ export default function HomePageMobile() {
                             <img className="lan-icon" src={sqlIcon}></img>
                         </div>
                     </div>
-                    <div className="row justify-content-center ">
+                    <div className="row justify-content-center my-5">
                         <div className="col-5 peper-card">
                             <h2 className="mt-2">AI</h2>
                             <p>Artificial Intelligence</p>
