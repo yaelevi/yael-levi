@@ -6,7 +6,7 @@ body{
   text-align: center;
   height: 100vh;
   overflow-x: hidden;
-  
+  scroll-behavior: smooth !important;
 }
 .ppp{
   color:black !important;

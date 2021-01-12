@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './home-page.css'
 import logo from '../../img/logo.png'
-import airport from '../../img/rocket.png'
+import airport from '../../img/rocket(2).png'
 import room2 from '../../img/room-part-2.png'
 import room3 from '../../img/room-part-3.png'
 import room4 from '../../img/room-part-4.png'
@@ -28,17 +28,11 @@ import chartCard from '../../img/chart_2.png'
 import gearCard from '../../img/gear_2.png'
 import lockCard from '../../img/lock_1.png'
 import cup from '../../img/cup.png'
-import knowMeLogo from '../../img/know-me-logo.png'
-import boxLogo from '../../img/box-logo.png'
-import box from '../../img/box.png'
-import leaderFunnelLogo from '../../img/leader-funnel-logo.png'
-import funnel from '../../img/funnel.png'
-import time from '../../img/time.png'
-import hub from '../../img/hub.png'
+// import knowMeLogo from '../../img/know-me-logo.png'
+// import boxLogo from '../../img/box-logo.png'
+
 import stories from '../../img/stories.png'
 import quote from '../../img/quote.png'
-import hubLogo from '../../img/hub-logo.png'
-import timeLogo from '../../img/time-logo.png'
 import storiesLogo from '../../img/stories-logo.png'
 import quoteLogo from '../../img/quote-logo.png'
 import js from '../../img/jsIcond.png'
@@ -49,16 +43,31 @@ import node from '../../img/nodeIcond.png'
 import angular from '../../img/angulrIcond.png'
 import jQuery from '../../img/jqueryIcond.png'
 import sqlIcon from '../../img/sqlIcond (1).png'
+import callUs from '../../img/btn-call-us hebrew.png'
+import clouds from '../../img/clouds.png'
+import Carousel from 'react-elastic-carousel';
+
+import knowMe from '../../img/know-me-desk.png'
+import box from '../../img/box-computer-desk.png'
+import funnel from '../../img/funnel-computer-desk.png'
+import hub from '../../img/hub-computer-desk.png'
+import time from '../../img/time-compter-desk.png'
+import knowMeLogo from '../../img/know-me-logo.png'
+import boxLogo from '../../img/box-logo (1).png'
+import leaderFunnelLogo from '../../img/funnel-logo.png'
+import hubLogo from '../../img/hub-logo.png'
+import timeLogo from '../../img/time-logo.png'
+
 export default function HomePageDesk() {
     return (
-        <div className="d-none d-sm-block">
+        <div className="d-none d-sm-block" >
             <div className="desk-part-1">
                 <div className="container-fluid ">
-                    <nav className="navbar row ">
-                        <img className="offset-1 col-md-2" src={logo} ></img>
-                        <div className="btn-nav-bar col-md-7">
+                    <nav className="navbar row justify-content-center">
+                        <img className=" col-2" src={logo} ></img>
+                        <div className="btn-nav-bar  col-9">
                             {/* <button className="px-4 py-2 " >ENGLISH</button> */}
-                            <a href="#CustomerService"> <button>שירות לקוחות</button></a>
+                            <a href="#connectUs"> <button>שירות לקוחות</button></a>
                             <a href="#projects"><button>פרוייקטים</button></a>
                             <a href="#solution"><button>פתרונות</button></a>
                             <a href="#tecnologics"><button>טכנולוגיות</button></a>
@@ -67,31 +76,31 @@ export default function HomePageDesk() {
                     </nav>
                     <div class=" row justify-content-center">
                         <div className="col-5 ml-5">
-                            <div className="container-fluid">
-                                <div className="row mt-5 mb-5">
-                                    <img src={cloud2} className="cloud-2-desk col-3"></img>
-                                    <img src={airport} className="airport col-5 mt-5"></img>
-                                    <img src={cloud1} className="cloud-1-desk col-3"></img>
-                                    {/* <img src={cloud3} className="cloud-3-desk col-3"></img> */}
-                                </div>
-                            </div>
+                            <img src={airport} className="airport mb-5  mt-5"></img>
                         </div>
-                        <div class="col-4 mt-5">
-                            <h1 className="title-header mt-5">חממה טכנולוגית AGILE בשיטת</h1>
-                            <p className="text mt-4 ">
-                                Leader.Codes מקבוצת StartUpPlan ברוכים הבאים ל ומערכות CMS, אנחנו מתמחים בפיתוח תוכנה, אפליקציות, מערכות .השיטה שלנו מאפשרת לחסוך של עד 50% מהוצאות הפיתוח. CRM
-                            </p>
-                            <div className="row justify-content-end mt-4">
-                                <a href="#connectUs"> <button className="appointment mt-3 mr-4 "  >קבע פגישת ייעוץ חינם</button></a>
-                                {/* <button className="read-more-about mt-3 mr-4"  >קרא עוד אודות השיטה</button> */}
+                        <div className="col-5 container-fluid">
+                            <div className="row">
+                                <div class="col-12  header">
+                                    <h1 className="title-header mt-5">-ברוכים הבאים ל Startup plan</h1>
+                                    <h2>תוכנית הזנק למיזמי אינטרנט וסטארטאפים</h2>
+                                </div>
+                                <div className="col-9 offset-3">
+                                    <p className="text mt-4 ">
+                                        אנחנו מתמחים בפיתוח תוכנה, אפליקציות, ומערכות web מורכבות  השיטה שלנו מאפשרת לחסוך של עד 50% מהוצאות הפיתוח,אנחנו מעדיפים מערכות יחסים מוצלחות מאשר חוזים מורכבים ומאפשרים תחילת עבודה ללא עלות וללא התחייבות מצדכם                                      </p>
+                                    <div className="row justify-content-end mt-4">
+                                        <a href="#connectUs"> <button className="appointment px-4 py-2 mt-3 mb-5"  >לקביעת פגישה</button></a>
+                                        {/* <button className="read-more-about mt-3 mr-4"  >קרא עוד אודות השיטה</button> */}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className=" conainer-fluid desk-part-2" id="agile">
-                <div clastsName=" mt-5 row justify-content-center row align-items-center">
-                    <h2 className="agile mt-5 col-12">השיטה שלנו</h2>
+            <div className=" conainer-fluid desk-part-2">
+
+                <div className=" mt-5 row justify-content-center row align-items-center">
+                    <h2 className="agile mt-5 col-12">מה מניע אותנו</h2>
                     <div className="mt-5 col-3">
                         <img src={magnifier1} ></img>
                     </div>
@@ -102,7 +111,8 @@ export default function HomePageDesk() {
                         <img src={paperPlane2} ></img>
                     </div>
                 </div>
-                <div className="aa mt-3 row justify-content-center ">
+
+                <div className="aa mt-3 row justify-content-center pb-5 ">
                     <div className="col-3">
                         <h2>מתייעלים בזמן אמת</h2>
                         <p>גילוי מוקדם של בעיות מאפשר לטפל בהם במהירות. בכל שבוע הצוות מתכנס,
@@ -119,65 +129,146 @@ export default function HomePageDesk() {
                              נעדיף להעמיק את שיתוף הפעולה וללמוד תוך כדי תנועה. כך גם הצוותים שלנו עובדים במקביל ובדו שיח על בסיס יומיומי. הסנכרון של צוותים בעלי יכולות מגוונות מאפשר לנו למנוע פקקים והתעכבויות ולפתח באופן עצמאי וללא תלות חיצונית, כל יכולת מקצה לקצה.</p>
                     </div>
                 </div>
-                <div className="row part-2-a mt-5 ">
-                    <img src={room2} className="col-6 mt-5 pt-5"></img>
-                    <div className="offset-1 col-4 steps mt-5 ">
-                        <h2>1</h2>
-                        <h3>מסמנים מטרה</h3>
-                        <div className="border mt-4 w-25 "></div>
-                        <div className="mt-5">
-                            <h4>עיצוב</h4>
-                            <div className="circle"></div>
-                            <h4>תכנון</h4>
-                            <div className="circle"></div>
-                            <h4>אפיון</h4>
-                        </div>
-                        <p>מלקוחות שלא עברו תהליך אפיון מעמיק עלולים לסיים תהליכי פיתוח עם טעם חמוץ בפה. המתכנתים ואנשי המקצוע לא יצליחו לעשות את העבודה אם הצרכים שלכם לא הובנו במלואם. כדי לספק לכם את הפתרונות המושלמים,
+                <div className="row justify-content-around part-2-a mt-5 " id="agile">
+                    <h2 className="agile mt-5 pt-5 col-12">השיטה שלנו</h2>
+                    <img src={room2} className="col-5 pt-5 mt-5"></img>
+                    <div className=" col-4 steps  pt-5 mb-3 mt-5">
+                        <div className="container-fluid">
+                            <div className="row align-items-center">
+                                <div className="col-10 pr-0 mt-5">
+                                    <h3>מסמנים מטרה</h3>
+                                    <h4 className="mt-3">עיצוב • תכנון • אפיון</h4>
+                                </div>
+                                <h2 className="col-1 px-0 py-0 my-0">1</h2>
+                                <p>מלקוחות שלא עברו תהליך אפיון מעמיק עלולים לסיים תהליכי פיתוח עם טעם חמוץ בפה. המתכנתים ואנשי המקצוע לא יצליחו לעשות את העבודה אם הצרכים שלכם לא הובנו במלואם. כדי לספק לכם את הפתרונות המושלמים,
                          אנחנו צריכים להבין את הצרכים והבעיות, הרצונות והדרישות שלכם בצורה הכי מדויקת, בהתאם לכך נתכנן את העבודה ונעצב את חווית המשתמש [UX] ואת הממשק התומך [UI] בהתאם.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div className="container-fluid desk-part-3">
                 <div class="row justify-content-around">
                     <div className=" col-4 steps">
-                        <h2>2</h2>
-                        <h3>מנועים בכל הכח</h3>
-                        <div className="border mt-4 w-25 "></div>
-                        <div className="mt-5">
-                            <h4>דיבאגינג</h4>
-                            <div className="circle"></div>
-                            <h4>פיתוח</h4>
-                            <div className="circle"></div>
-                            <h4>QA</h4>
-                        </div>
-                        <p>בהתאם לשיטת העבודה האיג’איילית שלנו, תהליכי הפיתוח שלנו במקביל - ניפוי ותיקון שגיאות [Debugging] ותהליכי בקרת איכות מחמירים [Quality Assurance].
+                        <div className="container-fluid">
+                            <div className="row align-items-center mt-5">
+                                <div className="col-10 mt-5">
+                                    <h3>מנועים בכל הכח</h3>
+                                    {/* <div className="border offset-9 mt-4 w-25 "></div> */}
+                                    <h4 className="mt-3">QA • פיתוח • דיבאגינג</h4>
+                                </div>
+                                <h2 className="col-1 px-0">2</h2>
+                                <p className="">בהתאם לשיטת העבודה האיג’איילית שלנו, תהליכי הפיתוח שלנו במקביל - ניפוי ותיקון שגיאות [Debugging] ותהליכי בקרת איכות מחמירים [Quality Assurance].
                             בספרינט הזה אנחנו מאתרים כשלים ותקלות שעלולים לפגוע בחווית השימוש ובשביעות הרצון של המשתמשים. אנחנו מפתחים ובה בעת מוודאים שהמוצר יגיע אליכם כשהו עובד וללא כל תקלה.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-5 mt-5">
+                    <div class="col-5 mt-5 ml-5">
                         <img src={room3}></img>
                     </div>
                 </div>
             </div>
             <div className="container-fluid desk-part-4">
-                <div class="row justify-content-around part-a">
-                    <img src={room4} class="col-6  mt-5 "></img>
-                    <div className=" col-5  steps mt-5">
-                        <h2>3</h2>
-                        <h3>!להדק חגורות, אנחנו ממריאים</h3>
-                        <div className="border mt-4 w-25 "></div>
-                        <div className="h4 mt-5">
-                            <h4>עלייה לאוויר</h4>
-                            <div className="circle"></div>
-                            <h4>בדיקות אבטחה</h4>
-                            <div className="circle"></div>
-                            <h4>רספונסיביות</h4>
-                        </div>
-                        <p className="">המערכות שלכם חייבות להיות גמישות ובטוחות.
-                        הן צריכות לתפקד באופן מושלם בכל מצב נתון ולהתאים את עצמן אוטומטית לכל סוגי המחשבים, המסכים ובכל הרזולוציות. כמו כן הן צריכות להיות עמידות של בפני התקפות זדוניות,
+                <div class="row justify-content-center part-a ">
+
+                    <img src={room4} class="col-5  mt-5 pr-0 mr-0"></img>
+                    <div className=" col-6 steps mt-5 mr-5">
+                        <div className="container-fluid">
+                            <div className="row align-items-center mt-5">
+                                <div className="col-10 mt-5">
+                                    <h3>!להדק חגורות, אנחנו ממריאים</h3>
+                                    {/* <div className="border offset-9 mt-4 w-25 "></div> */}
+                                    <h4 className="mt-3">רספונסביות • בדיקות אבטחה • עלייה לאוויר</h4>
+                                </div>
+                                <h2 className="col-1 px-0">3</h2>
+                                <p className="offset-4 pr-5 col-8 col align-self-end">המערכות שלכם חייבות להיות גמישות ובטוחות.
+                                הן צריכות לתפקד באופן מושלם בכל מצב נתון ולהתאים את עצמן אוטומטית לכל סוגי המחשבים, המסכים ובכל הרזולוציות. כמו כן הן צריכות להיות עמידות של בפני התקפות זדוניות,
                           גנבת מידע וניצול לרעה. אל דאגה, אנחנו דואגים שהכל יהיה מוכן להמראה.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div className="desk-part-5 mt-5" id="solution">
+                    <div className="row justify-content-center mt-5 ">
+                        <img src={arrow} className="my-5 "></img>
+                    </div>
+                    <div className="row justify-content-center">
+                        <div className="steps">
+                            <h1 className=" offset-1 col-12 ">פתרונות</h1>
+                            <div className=" border mt-3 offset-4 col-6 " ></div>
 
+                        </div>
+                    </div>
+                    <div className="row justify-content-center cards my-5 mb-5 py-5">
+                        <div className="  card-list-paper col-2 mb-5">
+                            <div className="card-flip">
+                                <div className="card-front ">
+                                    <img className="ml-2 mt-2" src={circleCard} alt="Card image cap"></img>
+                                    {/* <div> */}
+                                    <p class="card-title-paper mt-3 ">שרתים ואחסון מידע</p>
+                                    {/* <button href="#" className="read-more mr-4 mt-0">קרא עוד</button> */}
+                                    {/* </div> */}
+                                </div>
+                                <div className="card-back ">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus sapien odio, sit amet malesuada massa semper at. Aenean semper gravida libero
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="  card-list-paper col-2 mb-5 ">
+                            <div className="card-flip">
+                                <div className="card-front ">
+                                    <img class="ml-2 mt-2" src={lockCard} alt="Card image cap"></img>
+                                    <div class="">
+                                        <p class="card-title-paper mt-3 ">סייבר</p>
+                                        {/* <button href="#" className="read-more mr-4 mt-0">קרא עוד</button> */}
+                                    </div>
+                                </div>
+                                <div className="card-back ">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus sapien odio, sit amet malesuada massa semper at. Aenean semper gravida libero
+                                      </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="  card-list-paper col-2 mb-5">
+                            <div className="card-flip">
+                                <div className="card-front ">
+                                    <img class="ml-2 mt-2" src={computerCard} alt="Card image cap"></img>
+                                    <div class="">
+                                        <p class="card-title-paper mt-3 ">פיתוח</p>
+                                        {/* <button href="#" className="read-more mr-4 mt-0">קרא עוד</button> */}
+                                    </div>
+                                </div>
+                                <div className="card-back ">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus sapien odio, sit amet malesuada massa semper at. Aenean semper gravida libero
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="  card-list-paper col-2 mb-5">
+                            <div className="card-flip">
+                                <div className="card-front ">
+                                    <img class="ml-2 mt-2" src={chartCard} alt="Card image cap"></img>
+                                    <div class="">
+                                        <p class="card-title-paper mt-3 ">CX</p>
+                                        {/* <button href="#" className="read-more mr-4 mt-0">קרא עוד</button> */}
+                                    </div>
+                                </div>
+                                <div className="card-back ">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus sapien odio, sit amet malesuada massa semper at. Aenean semper gravida libero
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            < div className="container-fluid desk-part">
                 <div id="tecnologics" className="row justify-content-center learn-languages mt-5 pt-5">
                     <h2 className="col-12">טכנולוגיות</h2>
                     <div className="border col-1 my-5"></div>
@@ -202,6 +293,9 @@ export default function HomePageDesk() {
                             <p>nodeJS</p>
                         </li>
                     </ul>
+                </div>
+
+                <div className="row justify-content-center icon">
                     <ul >
                         <li className="col-2">
                             <img src={react}></img>
@@ -223,119 +317,103 @@ export default function HomePageDesk() {
 
                     </ul>
                 </div>
+                <img className="clouds offset-10" src={clouds}></img>
                 <div className="row ml-5 justify-content-center mt-5">
-                    <div className="col-2 peper-card  ">
+                    <div className="col-2 peper-card py-2">
                         <h2 className="mt-2 ">AI</h2>
                         <p className="">Artificial Intelligence</p>
                     </div>
-                    <div className="col-2 mx-5 peper-card">
+                    <div className="col-2 mx-5 peper-card py-2">
                         <h2 className="mt-2">BI</h2>
                         <p>Business Intelligence</p>
                     </div>
-                    <div className="col-2 peper-card">
+                    <div className="col-2 peper-card py-2">
+                        <h2 className="mt-2">CMS</h2>
+                        <p>custom managment system</p>
+                    </div>
+
+                </div>
+                <div className="row ml-5 justify-content-center mt-3 pb-5">
+                    <div className="col-2 peper-card py-2">
+                        <h2 className="mt-2">W&M</h2>
+                        <p>Web & Mobile</p>
+                    </div>
+                    {/* <div className="col-2 mx-5 peper-card">
+                        <h2 className="mt-2">UX/UI</h2>
+                        <p>UserExperience/UserInterface</p>
+                    </div> */}
+                    <div className="col-2 peper-card mx-5 py-2">
+                        <h2 className="mt-2">UX/UI</h2>
+                        <p>UserExperience /UserInterface</p>
+                    </div>
+                    <div className="col-2 peper-card py-2">
                         <h2 className="mt-2">LG</h2>
                         <p>Lead Generation</p>
                     </div>
                 </div>
-                <div className="row ml-5 justify-content-center mt-3">
-                    <div className="col-2 peper-card">
-                        <h2 className="mt-2">W&M</h2>
-                        <p>Web & Mobile</p>
-                    </div>
-                    <div className="col-2 mx-5
-                     peper-card">
-                        <h2 className="mt-2">UX/UI</h2>
-                        <p>UserExperience/UserInterface</p>
-                    </div>
-                    <div className="col-2 peper-card mb-5">
-                        <h2 className="mt-2">CMS</h2>
-                        <p>custom managment system</p>
-                    </div>
+            </div>
+            <div className="row  justify-content-center" id="projects">
+                <div className="steps mt-5 mb-3">
+                    <h1 className=" col-12 mb-5">פרויקטים חמים מהתנור</h1>
+                    <div className=" border offset-4 col-5 mb-5" ></div>
                 </div>
             </div>
-            < div className="container-fluid desk-part">
-                <div className="desk-part-5" id="solution">
-                    <div className="row justify-content-center">
-                        <img src={arrow} className="mt-5 "></img>
-                    </div>
-                    <div className="row justify-content-center">
-                        <div className="steps">
-                            <h1 className=" offset-1 col-12 ">פתרונות</h1>
-                            <div className=" border mt-3 offset-4 col-6 " ></div>
 
-                        </div>
-                    </div>
-                    <div className="row justify-content-center cards mt-5 ">
-                        <div className="  card-list-paper col-2">
-                            <div className="card-flip">
-                                <div className="card-front ">
-                                    <img class="ml-2 mt-2" src={circleCard} alt="Card image cap"></img>
-                                    <div class="">
-                                        <p class="card-title-paper mt-3 ">שרתים ואחסון מידע</p>
-                                        {/* <button href="#" className="read-more mr-4 mt-0">קרא עוד</button> */}
-                                    </div>
-                                </div>
-                                <div className="card-back ">
-                                    <h3>fdsff</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="  card-list-paper col-2">
-                            <div className="card-flip">
-                                <div className="card-front ">
-                                    <img class="ml-2 mt-2" src={lockCard} alt="Card image cap"></img>
-                                    <div class="">
-                                        <p class="card-title-paper mt-3 ">סייבר</p>
-                                        {/* <button href="#" className="read-more mr-4 mt-0">קרא עוד</button> */}
-                                    </div>
-                                </div>
-                                <div className="card-back ">
-                                    <h3>fdsff</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="  card-list-paper col-2">
-                            <div className="card-flip">
-                                <div className="card-front ">
-                                    <img class="ml-2 mt-2" src={computerCard} alt="Card image cap"></img>
-                                    <div class="">
-                                        <p class="card-title-paper mt-3 ">פיתוח</p>
-                                        {/* <button href="#" className="read-more mr-4 mt-0">קרא עוד</button> */}
-                                    </div>
-                                </div>
-                                <div className="card-back ">
-                                    <h3>fdsff</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="  card-list-paper col-2">
-                            <div className="card-flip">
-                                <div className="card-front ">
-                                    <img class="ml-2 mt-2" src={chartCard} alt="Card image cap"></img>
-                                    <div class="">
-                                        <p class="card-title-paper mt-3 ">CX</p>
-                                        {/* <button href="#" className="read-more mr-4 mt-0">קרא עוד</button> */}
-                                    </div>
-                                </div>
-                                <div className="card-back ">
-                                    <h3>fdsff</h3>
-                                </div>
-                            </div>
+            <Carousel className=" container-fluid mr-5 " >
+                <div className=" container ">
+                    <div className="row justify-content-center  ">
+                        <img src={knowMe}></img>
+                        <div className="project-logo-and-text">
+                            <img src={knowMeLogo}></img>
+                            <p >לוג עסקי המנהל את כלל הפניות וההתראות מכל ערוצי השיווק -</p>
                         </div>
                     </div>
                 </div>
-                {/* <h2 id="projects" className="projects mt-5">פרויקטים חמים מהתנור</h2>
-                <div className="border col-1"></div> */}
-            </div>
-   
-            <div className=" container-fluid desk-part-7">
+                <div className=" container">
+                    <div className="row justify-content-center   ">
+                        <img src={box}></img>
+                        <div className="project-logo-and-text">
+                            <img src={boxLogo}></img>
+                            <p >לוג עסקי המנהל את כלל הפניות וההתראות מכל ערוצי השיווק -</p>
+                        </div>
+                    </div>
+                </div>
+                <div className=" container">
+                    <div className="row justify-content-center   ">
+                        <img src={hub}></img>
+                        <div className="project-logo-and-text">
+                            <img src={hubLogo}></img>
+                            <p >לוג עסקי המנהל את כלל הפניות וההתראות מכל ערוצי השיווק -</p>
+                        </div>
+                    </div>
+                </div>
+                <div className=" container">
+                    <div className="row justify-content-center   ">
+                        <img src={funnel}></img>
+                        <div className="project-logo-and-text">
+                            <img src={leaderFunnelLogo}></img>
+                            <p >לוג עסקי המנהל את כלל הפניות וההתראות מכל ערוצי השיווק -</p>
+                        </div>
+                    </div>
+                </div>
+                <div className=" container ">
+                    <div className="row justify-content-center   ">
+                        <img src={time}></img>
+                        <div className="project-logo-and-text">
+                            <img src={timeLogo}></img>
+                            <p >לוג עסקי המנהל את כלל הפניות וההתראות מכל ערוצי השיווק -</p>
+                        </div>
+                    </div>
+                </div>
+            </Carousel>
+
+
+            {/* <div className=" container-fluid desk-part-7">
                 <div className="row justify-content-center row align-items-center box aplicate ">
-                    <div className="col-3">
+                    <div className="offset-2 col-3">
                         <div className="logo mb-4">
-                            {/* <h2 className="mr-4">Box</h2> */}
                             <img src={box}></img>
                         </div>
-                        <h1 >אינדקס B2B</h1>
                         <p className="mt-2">. הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן ,
                         בחודש הזה אנחנו יוצרים את התבנית.
                         מאפיינים מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם .כל הפונקציות של הסטארט-אפ שלכם
@@ -347,16 +425,14 @@ export default function HomePageDesk() {
                 </div>
             </div>
             <div className=" container-fluid desk-part-8">
-                <div className="row justify-content-around funnel aplicate m-5">
+                <div className="row justify-content-around funnel aplicate m-5 py-5">
                     <div className="col-5 p-5">
                         <img src={leaderFunnelLogo}></img>
                     </div>
-                    <div className="offset-1 col-3 mt-5">
+                    <div className="col-3 mt-5">
                         <div className="logo mb-4">
-                            {/* <h2>Leader Funnel</h2> */}
                             <img src={funnel}></img>
                         </div>
-                        <h1 >אינדקס B2B</h1>
                         <p className="mt-2">. הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן ,
                         בחודש הזה אנחנו יוצרים את התבנית.
                         מאפיינים מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם .כל הפונקציות של הסטארט-אפ שלכם
@@ -365,13 +441,11 @@ export default function HomePageDesk() {
                 </div>
             </div>
             <div className=" container-fluid desk-part-9">
-                <div className="row justify-content-center row align-items-center hub aplicate m-5">
-                    <div className="col-3">
+                <div className="row justify-content-center row align-items-center hub aplicate m-5 py-5">
+                    <div className="offset-2 col-3">
                         <div className="logo mb-4">
-                            {/* <h2 className="mr-4">Hub</h2> */}
                             <img src={hub}></img>
                         </div>
-                        <h1 >אינדקס B2B</h1>
                         <p className="mt-2">. הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן ,
                         בחודש הזה אנחנו יוצרים את התבנית.
                         מאפיינים מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם .כל הפונקציות של הסטארט-אפ שלכם
@@ -383,17 +457,15 @@ export default function HomePageDesk() {
                 </div>
             </div>
             <div className=" container-fluid desk-part-10">
-                <div className="row justify-content-around row align-items-center time aplicate m-5 ">
+                <div className="row justify-content-around row align-items-center time aplicate m-5 py-5 ">
 
                     <div className="col-5 p-5">
                         <img src={timeLogo}></img>
                     </div>
-                    <div className="offset-1 col-3">
+                    <div className=" col-3">
                         <div className="logo mb-4">
-                            {/* <h2>Time</h2> */}
                             <img src={time}></img>
                         </div>
-                        <h1>אינדקס B2B</h1>
                         <p className="mt-2">
                             הפתגם ‘זמן שווה כסף’ הוא טעות. לכסף אין סוף אבל הזמן הוא המשאב המוגבל והיקר של הצוות ושל הפרויקטים. יומן חכם ומרובה אפשרויות. כמו פגישות צוות הכוללות מינוי אחראי ודו”ח מסכם. קביעת אירועים שמייצרת באופן אוטומטי דף נחיתה עם וידאו ואפשרויות מכירת כרטיסים ועוד ועוד.
                             היומן משתלב עם כל שאר המערכות ומאפשר לנהל את הלידים, הצוותים, הפגישות, האירועים והמטרות העיסקיות.
@@ -402,33 +474,30 @@ export default function HomePageDesk() {
                 </div>
             </div>
             <div className=" container-fluid desk-part-11">
-                <div className="row justify-content-center row align-items-center stories aplicate">
-                    <div className="col-3">
+                <div className="row justify-content-center row align-items-center stories aplicate m-5 py-5">
+                    <div className="offset-2 col-3">
                         <div className="logo mb-4">
                             <img src={stories}></img>
                         </div>
-                        <h1 >אינדקס B2B</h1>
                         <p className="mt-2">. הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן ,
                         בחודש הזה אנחנו יוצרים את התבנית.
                         מאפיינים מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם .כל הפונקציות של הסטארט-אפ שלכם
                         </p>
                     </div>
-                    <div className="offset-1 col-5">
+                    <div className="offset-1 p-5 col-5">
                         <img src={storiesLogo}></img>
                     </div>
                 </div>
             </div>
-            <div className=" container-fluid desk-part-12">
-                <div className="row justify-content-around row align-items-center quote aplicate">
+            <div className=" container-fluid desk-part-12 ">
+                <div className="row justify-content-around row align-items-center time aplicate mx-5 py-5">
                     <div className="col-5 p-5">
                         <img src={quoteLogo}></img>
                     </div>
                     <div className=" col-3">
                         <div className="logo mb-4">
-                            {/* <h2>quote</h2> */}
                             <img src={quote}></img>
                         </div>
-                        <h1>אינדקס B2B</h1>
                         <p className="mt-2">
                             הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן.
                             בחודש הזה אנחנו יוצרים את התבנית. מאפיינים,
@@ -437,11 +506,10 @@ export default function HomePageDesk() {
                 </div>
             </div>
             <div className=" container-fluid desk-part-6">
-                <div className="row justify-content-center row align-items-center know-me aplicate m-5">
+                <div className="row justify-content-center row align-items-center know-me aplicate mx-5">
 
-                    <div className=" col-4">
+                    <div className=" col-3">
                         <img className="mb-4" src={knowMeLogo}></img>
-                        <h1 >אינדקס B2B</h1>
                         <p className="mt-2">. הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן ,
                         בחודש הזה אנחנו יוצרים את התבנית.
                         מאפיינים מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם .כל הפונקציות של הסטארט-אפ שלכם
@@ -452,52 +520,45 @@ export default function HomePageDesk() {
                     </div>
                 </div>
             </div>
-            <div className="container-fluid desk-part-14" id="connectUs">
-                <div className="row justify-content-center  pt-5">
+            */}
+            <div className="container-fluid desk-part-14" id="connectUs" >
+                <div className="row justify-content-center">
                     <div className="col-4 mt-5 pt-5">
                         <img className="boy mt-5 " src={cup}></img>
                     </div>
-                    <div className="steps col-4 pt-5 mt-5 ">
+                    <div className="steps pt-5 mt-5 ">
                         <h1 className="lets-talk"> בואו נדבר</h1>
                         <label for="full-name " className="a"> שם מלא</label><br></br>
                         <input type="text" id="full-name" name="fullname"></input><br></br>
                         <label for="email"> מייל</label><br></br>
                         <input type="text" id="email" name="lastname"></input><br></br>
-                        <label for="your-massage">ההודעה שלך </label><br></br>
+                        <label for="your-massage">נייד</label><br></br>
                         <input type="text" id="your-massage" name="your-massage"></input><br></br>
-                        <button className="call-us mt-4"></button>
+                        <button className="appointment px-4 py-2 mt-5 mb-5"  > דברו איתנו</button>
+                        {/* <button className="mt-5 call-btn"> <img className=" call-us" src={callUs}></img></button> */}
+                        {/* <button className="call-us mt-4"></button> */}
 
-                    </div>
-                    <div className="container-fluid mt-5" >
-                        <div className="row justify-content-center details  mb-5">
-                            <img src={location}></img>
-                            <p>בר כוכבא 4 בני ברק</p>
-                            <img src={phoneIcon}></img>
-                            <p>03-1234567</p>
-                            <img src={mail}></img>
-                            <p>info@leader.codes</p>
+
+                        <div className="container-fluid mt-3 mb-5" >
+                            <div className="details detailsDesk row justify-content-end mt-5">
+                                <div className=" ">
+                                    <p className="" >בר כוכבא 4 בני ברק</p>
+                                    <img className="" src={location}></img>
+                                </div>
+                                <div className="  ">
+                                    <p className="">03-1234567</p>
+                                    <img className="" src={phoneIcon}></img>
+                                </div>
+                                <div className=" ">
+                                    <p className="">info@leader.codes</p>
+                                    <img className="" src={mail}></img>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-        //      <div className="card-flip">
-        //      <div className="card-front card-list-paper">
-        //          <img class="ml-2 mt-2" src={magnifierCard} alt="Card image cap"></img>
-        //          <div class="">
-        //              <h5 class="card-title-paper mt-3 ">חווית משתמש ועיצוב ממשקים</h5>
-        //              <button href="#" className="read-more mr-5 mt-0">קרא עוד</button>
-        //          </div>
-        //      </div>
-        //      <div className="card-back card-list-paper">
-        //          <img class="ml-2 mt-2" src={magnifierCard} alt="Card image cap"></img>
-        //          <div class="">
-        //              <h5 class="card-title-paper mt-3 ">back</h5>
-        //              <p> hfdjfh hfj hjhf j hjhl j fsjfhd hjfh kjd hsj jjk lfoie jhk</p>
-        //              {/* <button href="#" className="read-more mr-5 mt-0">קרא עוד</button> */}
-        //          </div>
-        //      </div>
-        //  </div>
+
     );
 }

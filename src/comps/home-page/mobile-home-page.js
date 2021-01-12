@@ -28,18 +28,6 @@ import paperPlane2 from '../../img/paper_plane_2.png'
 import timer2 from '../../img/timer_2.png'
 import phone from '../../mobile-img/phone-img.png'
 import knowMeLogo from '../../img/know-me-logo.png'
-import boxIcon from '../../img/box-icon (2).png'
-import boxLogo from '../../mobile-img/box-logo (2).png'
-import funnelIcon from '../../mobile-img/funnel-icon (2).png'
-import funnelLogo from '../../mobile-img/funnel-logo.png'
-import hubLogo from '../../mobile-img/hub-logo.png'
-import hubIcon from '../../mobile-img/hub-icon.png'
-import timeIcon from '../../mobile-img/time-icon.png'
-import timeLogo from '../../mobile-img/time-logo (2).png'
-import storiesIcon from '../../mobile-img/stories-icon.png'
-import storiesLogo from '../../mobile-img/stories-logo.png'
-import quoteIcon from '../../mobile-img/quote-icon.png'
-import quoteLogo from '../../mobile-img/quote-logo.png'
 import logoMenue from '../../mobile-img/logo-menue.png'
 import arrow2 from '../../img/Mask Group 74.png';
 import circleCard from '../../img/Mask Group 75.png'
@@ -55,18 +43,28 @@ import angularIcon from '../../img/angularIcon.png'
 import jqueryIcon from '../../img/jqueryIcon.png'
 import sqlIcon from '../../img/sqlIcon.png'
 import callPhone from '../../mobile-img/call-btn.png'
-// import call from 'react-native-phone-call'
-
-const args = {
-    number: '9093900003', // String value with the number to call
-    prompt: false // Optional boolean property. Determines if the user should be prompt prior to the call 
-}
-
-// call(args).catch(console.error)
-{/* <Text  style={styles.funcNavText}>119</Text> */ }
+import Carousel from 'react-elastic-carousel';
+import knowMe from '../../mobile-img/know-me-mobile.png'
+import box from '../../mobile-img/box-coputer-mobile.png'
+import funnel from '../../mobile-img/funnel-computer-mobile.png'
+import hub from '../../mobile-img/hub-computer-mobile.png'
+import time from '../../mobile-img/time-computer-mobile.png'
+import boxLogo from '../../img/box-logo (1).png'
+import hubLogo from '../../img/hub-logo.png'
+import leaderFunnelLogo from '../../img/funnel-logo.png'
+import timeLogo from '../../img/time-logo.png'
+import $ from "jquery";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 
 export default function HomePageMobile() {
+
+    const func = () => {
+        $(document).ready(function () {
+            $(".popup-content ").hide();
+        });
+    }
 
     const show_ = false;
     const [show, setShow] = useState(false);
@@ -77,61 +75,63 @@ export default function HomePageMobile() {
         <div className="d-block d-sm-none">
             <div className="container-fluid mobile-part-1">
                 <div className="row">
-                    <Modal className="offset-3 col-9 " show={show} onHide={handleClose}>
-                        {/* <Menu></Menu> */}
-                        <div className="menue pt-4 d-block d-sm-none">
+                    {/* <Modal className="offset-3 col-9 " show={show} onHide={handleClose}>
+                        <div className="menue col-9 pt-4 d-block d-sm-none">
                             <ul className=" container-fluid mt-5">
                                 <img src={logoMenue} className="ml-5"></img>
-                                <li className="row justify-content-center mt-4 "><a href="#agile">AGILE שיטת</a></li>
-                                <li className="row justify-content-center mt-4 ">טכנולוגיות</li>
-                                <li className="row justify-content-center mt-4 ">פתרונות</li>
-                                <li className="row justify-content-center mt-4 ">פרוייקטים</li>
-                                <li className="row justify-content-center mt-4 ">שירות לקוחות</li>
+                                <a href="#agile"><li className="row justify-content-center mt-4 ">AGILE שיטת</li></a>
+                                <a href="#tecnologic"> <li className="row justify-content-center mt-4 ">טכנולוגיות</li></a>
+                                <a href="#solution"><li className="row justify-content-center mt-4 ">פתרונות</li></a>
+                                <a href="#projects"><li className="row justify-content-center mt-4 ">פרוייקטים</li></a>
+                                <a href="#servies"><li className="row justify-content-center mt-4 ">שירות לקוחות</li></a>
                             </ul>
                         </div>
-                    </Modal>
+                    </Modal> */}
                 </div>
                 <nav className="navbar row justify-content-between ">
-                    <img className="col-5" src={logo} ></img>
-                    <button className="btn-nav" onClick={handleShow} >
+                    <img className="ml-2" src={logo} ></img>
+                    <Popup trigger={<button className="btn-nav" >
                         <img className="nav" src={nav}></img>
-                    </button>
-                </nav>
+                    </button>} position="left top">
+                        <div className="menue w-100 d-block d-sm-none">
+                            <ul className=" container-fluid ">
+                                <img src={logoMenue} className="col-10 offset-1 col align-self-center pt-5 mt-5 mb-5"></img>
+                                <a href="#agil" onClick={func}> <li className="row justify-content-end mr-5 mt-5 ">AGILE שיטת</li></a>
+                                <a href="#tecnologic" onClick={func}><li className="row justify-content-end mr-5 mt-4 pt-3">טכנולוגיות</li></a>
+                                <a href="#solutions" onClick={func}> <li className="row justify-content-end mr-5 mt-4 pt-3">פתרונות</li></a>
+                                <a href="#projectss" onClick={func}> <li className="row justify-content-end mr-5 mt-4 pt-3">פרוייקטים</li></a>
+                                <a href="#servies" onClick={func}> <li className="row justify-content-end mr-5 mt-4 pb-5 pt-3">שירות לקוחות</li></a>
 
-                <div className=" row justify-content-center mt-3" >
-                    <div className="col-11">
-                        <h2 className="title px-1">חממה טכנולוגית בשיטת agile</h2>
-                        <div className="airport offset-3 col-9 mt-4">
-                            {/* <img src={cloud2} className=" col-4  cloud2"></img> */}
-                            <div className="airport-animate col-4"> <img src={airport} ></img></div>
-                            {/* <img src={cloud1} className=" col-4 cloud1"></img> */}
-
+                            </ul>
                         </div>
-                        <p className="text my-3 mb-5 px-2">
-                            ברוכים הבאים ל StartUpPlan מקבוצת Leader.Codes אנחנו מתמחים בפיתוח תוכנה, אפליקציות, מערכות CMS,
-                            ומערכות CRM. השיטה שלנו מאפשרת לחסוך של עד 50% מהוצאות הפיתוח.
-                        </p>
+                    </Popup>
+                </nav>
+                <div className=" row justify-content-center mt-3" >
+                    <h2 className="title col-9 px-1">-ברוכים הבאים ל Startup plan</h2>
+                    <h2 className="title h2 col-12">תוכנית הזנק למיזמי אינטרנט וסטארטאפים</h2>
+                    <div className="airport col-12 mt-4">
+                        <div className="airport-animate"> <img src={airport} ></img></div>
                     </div>
-                    {/* <button className="px-3 mb-4 read-more-about" >קרא עוד אודות השיטה</button> */}
-                    {/* <button className="px-3 appointment" ><a href="tel:+0548407163">קבע פגישת ייעוץ חינם</a></button> */}
+                    <p className="text col-9 my-3 mb-5 px-2">
+                        אנחנו מתמחים בפיתוח תוכנה, אפליקציות, ומערכות web מורכבות ,השיטה שלנו מאפשרת לחסוך של עד 50% מהוצאות הפיתוח ,אנחנו מעדיפים מערכות יחסים מוצלחות מאשר חוזים מורכבים ומאפשרים תחילת עבודה ללא עלות וללא התחייבות מצדכם    </p>
                     <a href="tel:+0548407163"> <img className="call-icon" src={callPhone}></img></a>
                 </div>
             </div>
-            <div className="container-fluid mobile-part-2" id="agile" >
+            <div className="container-fluid mobile-part-2" id="agil">
                 <div className=" row justify-content-center row align-items-center">
-                    <h2 className="agile mt-5 col-12">השיטה שלנו</h2>
-                    <div className="mt-5 col-12">
+                    <h2 className="agile mt-5 col-12">מה מניע אותנו</h2>
+                    <div className="mt-5 mb-3 col-12">
                         <img src={magnifier1} ></img>
                     </div>
-                    <div className="col-12 agiles">
-                        <h2>מתייעלים בזמן אמת</h2>
+                    <div className="col-10 agiles">
+                        <h2>מתיעלים בזמן אמת</h2>
                         <p>גילוי מוקדם של בעיות מאפשר לטפל בהם במהירות. בכל שבוע הצוות מתכנס,
                             בוחן את הפעילות ומחפש דרכים לייעל את הפיתוח ולפתור את התקלות.</p>
                     </div>
                     <div className="mt-5 col-12 ">
                         <img src={timer2} ></img>
                     </div>
-                    <div className=" col-12 agiles">
+                    <div className=" col-10 agiles">
                         <h2>מתקדמים במהירות</h2>
                         <p>לעומת זאת, תוכנה עובדת [working software] היא יחידת המידה האמיתית והמוחלטת להתקדמות אמיתית בפיתוח.
                             המטרה העליונה שלנו היא לספק תוכנה מוכחת, בעלת ערך ללקוח, תוך פרקי זמן קצרים, מבלי לחכות חודשים ארוכים להשלמת הפיתוח.</p>
@@ -139,417 +139,285 @@ export default function HomePageMobile() {
                     <div className="mt-5 col-12">
                         <img src={paperPlane2} ></img>
                     </div>
-                    <div className=" col-12 agiles">
+                    <div className=" col-10 mb-5 agiles">
                         <h2>מטפחים אנשים</h2>
                         <p>במקום להתעכב עם לקוחות במשא ומתן,
                              נעדיף להעמיק את שיתוף הפעולה וללמוד תוך כדי תנועה. כך גם הצוותים שלנו עובדים במקביל ובדו שיח על בסיס יומיומי. הסנכרון של צוותים בעלי יכולות מגוונות מאפשר לנו למנוע פקקים והתעכבויות ולפתח באופן עצמאי וללא תלות חיצונית, כל יכולת מקצה לקצה.</p>
                     </div>
 
-                    <div className="row justify-content-center part-2-a">
-                        <div className="col-10 mt-5">
+                    <div className="row justify-content-center part-2-a mt-5">
+                        <div className="col-10 mb-5 mt-3">
                             <img src={room1}></img>
                         </div>
-                        <div className=" col-10 mt-5 mb-3 step-one">
-                            <h3>ספרינט ראשון</h3>
+                        <div className="col-9 pr-0 col align-self-center">
                             <h2>מסמנים מטרה</h2>
-                            <div className="border my-3 offset-9 w-25 "></div>
-                            <ul className="dh4">
-                                <li className="h4"> <h4>עיצוב</h4></li>
-                                <li className="h4"> <div className="circle"></div></li>
-                                <li className="h4"><h4> תכנון</h4></li>
-                                <li className="h4"><div className="circle"></div></li>
-                                <li className="h4"><h4>אפיון</h4></li>
-                            </ul>
-
-                            <p>מלקוחות שלא עברו תהליך אפיון מעמיק עלולים לסיים תהליכי פיתוח עם טעם חמוץ בפה. המתכנתים ואנשי המקצוע לא יצליחו לעשות את העבודה אם הצרכים שלכם לא הובנו במלואם. כדי לספק לכם את הפתרונות המושלמים,
-                         אנחנו צריכים להבין את הצרכים והבעיות, הרצונות והדרישות שלכם בצורה הכי מדויקת, בהתאם לכך נתכנן את העבודה ונעצב את חווית המשתמש [UX] ואת הממשק התומך [UI] בהתאם.</p>
+                            {/* <div className="border my-3 offset-9 w-25 "></div> */}
+                            <h4 className="mt-2">עיצוב • תכנון • אפיון</h4>
                         </div>
+                        <h3 className="mr-5 col-1 col align-self-center">1</h3>
+                        <p className="col-10 pb-5">מלקוחות שלא עברו תהליך אפיון מעמיק עלולים לסיים תהליכי פיתוח עם טעם חמוץ בפה. המתכנתים ואנשי המקצוע לא יצליחו לעשות את העבודה אם הצרכים שלכם לא הובנו במלואם. כדי לספק לכם את הפתרונות המושלמים,
+                         אנחנו צריכים להבין את הצרכים והבעיות, הרצונות והדרישות שלכם בצורה הכי מדויקת, בהתאם לכך נתכנן את העבודה ונעצב את חווית המשתמש [UX] ואת הממשק התומך [UI] בהתאם.</p>
                     </div>
                 </div>
             </div>
             <div className="container-fluid">
-
                 <div className="mobile-part-3 row justify-content-center">
                     <div className="col-10 mt-5">
                         <img src={room2}></img>
                     </div>
-                    <div className="step-two col-11 mt-3 mb-3">
-                        <h3>ספרינט שני</h3>
-                        <h2>מנועים בכל הכח</h2>
-                        <div className="border my-3 offset-9 w-25 "></div>
-                        <ul className="dh4">
-                            <li className="h4"> <h4>דיבאגינג</h4></li>
-                            <li className="h4"> <div className="circle"></div></li>
-                            <li className="h4"><h4> פיתוח</h4></li>
-                            <li className="h4"><div className="circle"></div></li>
-                            <li className="h4"><h4>QA</h4></li>
-                        </ul>
-
-                        <p>בהתאם לשיטת העבודה האיג’איילית שלנו, תהליכי הפיתוח שלנו במקביל - ניפוי ותיקון שגיאות [Debugging] ותהליכי בקרת איכות מחמירים [Quality Assurance].
+                    <div className="col-9 pr-0 col align-self-center">
+                        <h2>מנועים בכל הכח </h2>
+                        {/* <div className="border my-3 offset-9 w-25 "></div> */}
+                        <h4 className="mt-2">QA • פיתוח • דיבאגינג</h4>
+                    </div>
+                    <h3 className="mr-5 col-1 col align-self-center">2</h3>
+                    <p className="col-11 pb-5">בהתאם לשיטת העבודה האיג’איילית שלנו, תהליכי הפיתוח שלנו במקביל - ניפוי ותיקון שגיאות [Debugging] ותהליכי בקרת איכות מחמירים [Quality Assurance].
                             בספרינט הזה אנחנו מאתרים כשלים ותקלות שעלולים לפגוע בחווית השימוש ובשביעות הרצון של המשתמשים. אנחנו מפתחים ובה בעת מוודאים שהמוצר יגיע אליכם כשהו עובד וללא כל תקלה.</p>
 
-                    </div>
+
                 </div>
                 <div className="mobile-part-4 row justify-content-center">
                     <div className="col-10 mt-5">
                         <img src={room3}></img>
                     </div>
-                    <div className="step-three col-11 mt-3 ">
-                        <h3> ספרינט שלישי</h3>
-                        <h2>,!להדק חגורות <br></br>אנחנו ממריאים</h2>
-                        <div className="border my-3 offset-9 w-25 "></div>
-                        <ul className="dh4">
-                            <li className="h4"> <h4>דיבאגינג</h4></li>
-                            <li className="h4"> <div className="circle"></div></li>
-                            <li className="h4"><h4> פיתוח</h4></li>
-                            <li className="h4"><div className="circle"></div></li>
-                            <li className="h4"><h4>רספונסיביות</h4></li>
-                        </ul>
-                        {/* <div className=" ab">
-                            <h4>בדיקות</h4>
-                            <div className="circle"></div>
-                            <div className="circle"></div>
-                            <h4>רספונסיביות</h4>
-                            <h4>בדיקות אבטחה</h4>
-                        </div>
-                        <div className="ab">
-                            <h4>עליה לאויר</h4>
-                            <div className="circle"></div>
-                            <div className="circle"></div>
-                            <h4>אבטחה</h4>
-                            <h4>בדיקות אבטחה</h4>
-                        </div> */}
+                    <div className="col-9 pr-0 col align-self-center">
+                        <h2> להדק חגורות אנחנו ממריאים</h2>
+                        {/* <div className="border my-3 offset-9 w-25 "></div> */}
+                    </div>
+                    <h3 className="mr-5 col-1 col align-self-center">3</h3>
+                    <h4 className="mt-1 col-11">עליה לאויר•QA•רספונסביות</h4>
 
-                        <p className="w-75">המערכות שלכם חייבות להיות גמישות ובטוחות.
-                        הן צריכות לתפקד באופן מושלם בכל מצב נתון ולהתאים את עצמן אוטומטית לכל סוגי המחשבים, המסכים ובכל הרזולוציות. כמו כן הן צריכות להיות עמידות של בפני התקפות זדוניות,
-                          גנבת מידע וניצול לרעה. אל דאגה, אנחנו דואגים שהכל יהיה מוכן להמראה.</p>
-
-                        {/* <div className="music-p col-7 mt-5">
-                        <p className="p-1 ">Lorem ipsum dolor sit ame, consetetur sadipscing</p>
-                          </div> */}
-                    </div>
-
-                    {/* <div className="col-5 mus offset-4">
-                        <img src={musical}></img>
-                    </div> */}
-                    <div className="container-fluid mt-0">
-                        <h1 className="tecnolgic">טכנולוגיות</h1>
-                        <div className="row justify-content-center mt-4">
-                            <img className="lan-icon" src={expressIcon}></img>
-                            <img className="lan-icon" src={reactIcon}></img>
-                            <img className="lan-icon" src={nodeIcon}></img>
+                    <p className="col-11 mb-0">בהתאם לשיטת העבודה האיג’איילית שלנו, תהליכי הפיתוח שלנו במקביל - ניפוי ותיקון שגיאות [Debugging] ותהליכי בקרת איכות מחמירים [Quality Assurance].
+                            בספרינט הזה אנחנו מאתרים כשלים ותקלות שעלולים לפגוע בחווית השימוש ובשביעות הרצון של המשתמשים. אנחנו מפתחים ובה בעת מוודאים שהמוצר יגיע אליכם כשהו עובד וללא כל תקלה.</p>
+                    <div className="container-fluid" >
+                        <div className="row justify-content-center mt-5 ml-4 arrow" id="solutions">
+                            <img src={arrow2}></img>
                         </div>
-                        <div className="row justify-content-center mt-5">
-                            <img className="lan-icon" src={angularIcon}></img>
-                            <img className="lan-icon" src={jqueryIcon}></img>
-                            <img className="lan-icon" src={JSIcon}></img>
-                        </div>
-                        <div className="row justify-content-center mt-5">
-                            <img className="lan-icon" src={mongodbIcon}></img>
-                            <img className="lan-icon" src={sqlIcon}></img>
-                        </div>
-                    </div>
-                    <div className="row justify-content-center my-5">
-                        <div className="col-5 peper-card">
-                            <h2 className="mt-2">AI</h2>
-                            <p>Artificial Intelligence</p>
-                        </div>
-                        <div className="col-5 ml-2 peper-card">
-                            <h2 className="mt-2">BI</h2>
-                            <p>Business Intelligence</p>
-                        </div>
-                        <div className="col-5 peper-card">
-                            <h2 className="mt-2">LG</h2>
-                            <p>Lead Generation</p>
-                        </div>
-                        <div className="col-5 ml-2 peper-card">
-                            <h2 className="mt-2">W&M</h2>
-                            <p>Web & Mobile</p>
-                        </div>
-                        <div className="col-5  peper-card">
-                            <h2 className="mt-2">UX/UI</h2>
-                            <p>User Experience / User Interface</p>
-                        </div>
-                        <div className="col-5 ml-2 peper-card">
-                            <h2 className="mt-2">CMS</h2>
-                            <p>custom management system</p>
-                        </div>
-                    </div>
-
-                    {/* <div className="col-5 mern">m<br></br>e<br></br>r<br></br>n</div>
-                    <div className="col-4 languages">
-                        <img src={mongo}></img>
-                        <label>mongoDB</label>
-                        <img src={express}></img>
-                        <label>Express</label>
-                        <img src={react}></img>
-                        <label>React</label>
-                        <img src={node}></img>
-                        <label>nodeJS</label>
-                    </div> */}
-                    {/* </div>
-                <div className="row justify-content-center mt-5 arrow">
-                    <img src={arrow}></img>
-                </div>
-                <div className="row">
-                    <div className="steps-mobile mt-5">
-                        <h1 className="col align-self-center">our projects</h1>
-                        <p className="p-2 offset-2 col-8">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
-                        <div className="offset-5 col-2 border"></div>
-                    </div>
-                </div>
-                <div className="row justify-content-center screen">
-                    <div className=" col-12 screen-1 "></div>
-                    {/* <div className="line col-6"></div> */}
-                    {/* <div className="col-11 my-0">
-                        <h1>loremipsum dolor sit amet,consetetur sadipscing</h1>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore</p>
-                    </div>
-                </div>
-                <div className="row justify-content-center screen">
-                    <div className=" col-12 screen-2 "></div>
-                    <div className="col-11 mt-4">
-                        <h1>loremipsum dolor sit amet,consetetur sadipscing</h1>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore</p>
-                    </div>
-                </div>
-                <div className="row justify-content-center screen">
-                    <div className=" col-12 screen-4 "></div>
-                    <div className="col-11 my-0">
-                        <h1>loremipsum dolor sit amet,consetetur sadipscing</h1>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore</p>
-                    </div>
-                </div>
-                <div className="row justify-content-center screen">
-                    <div className=" col-12 screen-5"></div>
-                    <div className="col-11 my-0">
-                        <h1>loremipsum dolor sit amet,consetetur sadipscing</h1>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore</p>
-                    </div>
-                </div>
-                <div className="row justify-content-center screen">
-                    <div className=" col-12 screen-6 mt-5"></div>
-                    <div className="col-11 mt-5">
-                        <h1>loremipsum dolor sit amet,consetetur sadipscing</h1>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore</p>
-                    </div>
-                </div>
-                <div className="row justify-content-center screen">
-                    <div className=" col-12 screen-7"></div>
-                    <div className="line"></div>
-                    <div className="col-11 mt-5">
-                        <h1>אינדקס B2B</h1>
-                        <p>. הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן
-                            , בחודש הזה אנחנו יוצרים את התבנית. מאפיינים מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם .כל הפונקציות של הסטארט-אפ שלכם</p>
-                    </div>*/}
-                </div>
-            </div>
-            <div className="container-fluid">
-                <div className="row justify-content-center mt-5 ml-4 arrow">
-                    <img src={arrow2}></img>
-                </div>
-                <div className="row justify-content-center">
-                    <div className="steps-mobile">
-                        <h1 className=" offset-1 col-12 ">פתרונות</h1>
-                        <div className=" border_ mt-3 col-6 offset-3 " ></div>
-                    </div>
-                </div>
-                <div className="card-flip">
-                    <div className="row  justify-content-center mt-3">
-                        <div className="card-list-paper w-50 ">
-                            <img class=" mt-2" src={circleCard} alt="Card image cap"></img>
-                            <div class="">
-                                <p class="card-title-paper mt-3 ">שרתים ואחסון מידע</p>
-                                <button href="#" className="read-more mr-4 mt-0 px-3 w-50">קרא עוד</button>
+                        <div className="row justify-content-center" >
+                            <div className="steps-mobile">
+                                <h1 className="tecnolgic col-12 mb-2">פתרונות</h1>
+                                <div className=" border_ mt-3 col-6 offset-3 mb-3" ></div>
                             </div>
                         </div>
-                    </div>
+                        <div className="card-flip">
+                            <div className="row justify-content-center mt-5 ">
 
-                    <div className="row  justify-content-center mt-3">
-                        <div className="card-list-paper  w-50 ">
-                            <img class=" mt-3" src={lockCard} alt="Card image cap"></img>
-                            <div class="">
-                                <p class="card-title-paper mt-3">סייבר</p>
-                                <button href="#" className="read-more mr-4 mt-0 px-3 w-50">קרא עוד</button>
+                                <div className="card-list-paper col-5">
+                                    <div className="card-flip">
+                                        <div className="card-front">
+                                            <img class=" mt-2" src={circleCard} alt="Card image cap"></img>
+                                            <p class="card-title-paper mt-3 ">שרתים ואחסון מידע</p>
+                                            {/* <button href="#" className="read-more mr-4 mt-0 mb-3 px-3 w-50">קרא עוד</button> */}
+                                        </div>
+                                        <div className="card-back ">
+                                            <p>
+                                                Lorem ipsum dolor sit amet elit. Maecenas
+                                                odio, sit amet malesuada massa semper at.
+                                         </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="card-list-paper ml-2 col-5">
+                                    <div className="card-flip">
+                                        <div className="card-front">
+                                            <img class=" mt-2" src={lockCard} alt="Card image cap"></img>
+                                            <p class="card-title-paper mt-3 ">סייבר</p>
+                                            {/* <button href="#" className="read-more mr-4 mt-0 mb-3 px-3 w-50">קרא עוד</button> */}
+                                        </div>
+                                        <div className="card-back ">
+                                            <p>
+                                                Lorem ipsum dolor sit amet elit. Maecenas
+                                                odio, sit amet malesuada massa semper at.
+                                         </p>
+                                        </div>
+                                    </div>
+                                    {/* <img className=" mt-2" src={lockCard} alt="Card image cap"></img>
+                                    <div class="">
+                                        <p class="card-title-paper mt-3">סייבר</p> */}
+                                    {/* <button href="#" className="read-more mr-4 mt-0 px-3  mb-3 w-50">קרא עוד</button> */}
+                                    {/* </div> */}
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div className="row  justify-content-center mt-3">
-
-                        <div className="card-list-paper w-50 ">
-                            <img class=" mt-4" src={computerCard} alt="Card image cap"></img>
-                            <div class="">
-                                <p class="card-title-paper mt-3">פיתוח</p>
-                                <button href="#" className="read-more mr-4 mt-0 px-3 w-50">קרא עוד</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row  justify-content-center mt-3">
-                        <div className="card-list-paper w-50 ">
-                            <img class=" mt-2" src={chartCard} alt="Card image cap"></img>
-                            <div class=" ">
-                                <p class="card-title-paper ">CX</p>
-                                <button href="#" className="read-more mr-4 mt-0 px-3 w-50">קרא עוד</button>
+                            <div className="row  justify-content-center mt-3 mb-5">
+                                <div className="card-list-paper col-5 ">
+                                    <div className="card-flip">
+                                        <div className="card-front">
+                                            <img class=" mt-2" src={computerCard} alt="Card image cap"></img>
+                                            <p class="card-title-paper mt-3 ">פיתוח</p>
+                                            {/* <button href="#" className="read-more mr-4 mt-0 mb-3 px-3 w-50">קרא עוד</button> */}
+                                        </div>
+                                        <div className="card-back ">
+                                            <p>
+                                                Lorem ipsum dolor sit amet elit. Maecenas
+                                                odio, sit amet malesuada massa semper at.
+                                         </p>
+                                        </div>
+                                    </div>
+                                    {/* <img class=" mt-2" src={computerCard} alt="Card image cap"></img>
+                                    <div class="">
+                                        <p class="card-title-paper mt-3">פיתוח</p> */}
+                                    {/* <button href="#" className="read-more mr-4 mt-0 px-3 mb-3  w-50">קרא עוד</button> */}
+                                    {/* </div> */}
+                                </div>
+                                <div className="card-list-paper ml-2 col-5">
+                                    <div className="card-flip">
+                                        <div className="card-front">
+                                            <img class=" mt-2" src={chartCard} alt="Card image cap"></img>
+                                            <p class="card-title-paper mt-3 ">CX</p>
+                                            {/* <button href="#" className="read-more mr-4 mt-0 mb-3 px-3 w-50">קרא עוד</button> */}
+                                        </div>
+                                        <div className="card-back ">
+                                            <p>
+                                                Lorem ipsum dolor sit amet elit. Maecenas
+                                                odio, sit amet malesuada massa semper at.
+                                         </p>
+                                        </div>
+                                    </div>
+                                    {/* <img class=" mt-2" src={chartCard} alt="Card image cap"></img>
+                                    <div class=" ">
+                                        <p class="card-title-paper mt-3">CX</p> */}
+                                    {/* <button href="#" className="read-more mr-4 mt-0 px-3 mb-3  w-50">קרא עוד</button> */}
+                                    {/* </div> */}
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className=" container-fluid desk-part-7 box mobile aplicate">
-                <h3 className="my-5">פרויקטים חמים מהתנור</h3>
-                <div className="row justify-content-center row align-items-center mt-4">
-                    <img className="col-4 pt-0 " src={boxIcon}></img>
+            <section id=""></section>
+            <div className="container-fluid pt-5" id="tecnologic">
+                <div className="row justify-content-center mb-5">
+                    <h1 className="mt-5 col-10 tecnolgic">טכנולוגיות</h1>
+                    <div className=" border_ w-25 mt-3  mb-3" ></div>
                 </div>
-                <div className="row justify-content-center row align-items-center">
-                    <h2 className="col-4">Box</h2>
+                {/* <h1 className="tecnolgic mt-5">טכנולוגיות</h1> */}
+                <div className="row justify-content-center mt-4">
+                    <img className="lan-icon" src={expressIcon}></img>
+                    <img className="lan-icon" src={reactIcon}></img>
+                    <img className="lan-icon" src={nodeIcon}></img>
                 </div>
-                <div className="row justify-content-center row align-items-center">
-                    <h1 className="col-8 mt-3">אינדקס B2B</h1>
-                    <div className="col-9">
-                        <p className="mt-2">לוג עסקי המנהל את כלל הפניות וההתראות מכל ערוצי השיווק - דפי הנחיתה, הטפסים, הצ’אט בוטים ועוד. מאגר ניהול קשרי לקוחות (CRM) חדשני שבו כל פניית לקוח [ליד חדש] מתעדכנת באופן חכם ואוטומטי במערכת,
-                        כחלק מקהל הלקוחות, ההולך וגדל. הבוקס שכולל אפשרויות פלטור ומיון משוכללות הוא למעשה כלי תקשורת רב ערוצי לתקשורת פנים ארגונית מושלמת ובהירה. תיבת לידר היא חדר הבקרה למשווק.   </p>
-                    </div>
-                    <div className="my-5 col-12">
-                        <img src={boxLogo}></img>
-                    </div>
+                <div className="row justify-content-center mt-5">
+                    <img className="lan-icon" src={angularIcon}></img>
+                    <img className="lan-icon" src={jqueryIcon}></img>
+                    <img className="lan-icon" src={JSIcon}></img>
                 </div>
-            </div>
-            <div className=" container-fluid desk-part-8 funnel mobile aplicate">
-                <div className="row justify-content-center row align-items-center">
-                    <img className="col-4 pt-0 mt-5" src={funnelIcon}></img>
-                </div>
-                <div className="row justify-content-center row align-items-center">
-                    <h2 className="col-7">Funnel</h2>
-                </div>
-                <div className="row justify-content-center row align-items-center">
-                    <h1 className="col-8 mt-3">אינדקס B2B</h1>
-                    <div className="col-9">
-                        <p className="mt-2">הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן.
-                        בחודש הזה אנחנו יוצרים את התבנית. מאפיינים, מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם כל הפונקציות של הסטארט-אפ שלכם.
-                        </p>
-                    </div>
-                    <div className="my-5 col-12">
-                        <img src={funnelLogo}></img>
-                    </div>
+                <div className="row justify-content-center mt-5">
+                    <img className="lan-icon" src={mongodbIcon}></img>
+                    <img className="lan-icon" src={sqlIcon}></img>
                 </div>
             </div>
-            <div className=" container-fluid desk-part-9 hub mobile aplicate">
-                <div className="row justify-content-center row align-items-center">
-                    <img className="col-4 pt-0 mt-5" src={hubIcon}></img>
+
+
+            <div className="row justify-content-center mt-5 mb-5">
+                <h1 className="tecnolgic col-10 mt-3">עולמות התוכן שלנו</h1>
+                <div className=" border_ w-25 mt-3  mb-3" ></div>
+            </div>
+            <div className="row justify-content-center mt-5 mb-5">
+                <div className="col-5  peper-card pb-2  mt-3 ">
+                    <h2 className="mt-2">AI</h2>
+                    <p>Artificial Intelligence</p>
                 </div>
-                <div className="row justify-content-center row align-items-center">
-                    <h2 className="col-4">Hub</h2>
+                <div className="col-5 ml-2 peper-card mt-3 pb-2 px-3">
+                    <h2 className="mt-2">BI</h2>
+                    <p>Business Intelligence</p>
                 </div>
-                <div className="row justify-content-center row align-items-center">
-                    <h1 className="col-8 mt-3">אינדקס B2B</h1>
-                    <div className="col-9">
-                        <p className="mt-2">הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן.
-                        בחודש הזה אנחנו יוצרים את התבנית. מאפיינים, מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם כל הפונקציות של הסטארט-אפ שלכם.
-                        </p>
-                    </div>
-                    <div className="my-5 col-12">
-                        <img src={hubLogo}></img>
-                    </div>
+                <div className="col-5  peper-card  mt-3">
+                    <h2 className="mt-2">UX/UI</h2>
+                    <p>User Experience / User Interface</p>
+                </div>
+                <div className="col-5 ml-2 peper-card mt-3">
+                    <h2 className="mt-2">W&M</h2>
+                    <p>Web & Mobile</p>
+                </div>
+                <div className="col-5 peper-card mt-3">
+                    <h2 className="mt-2">LG</h2>
+                    <p>Lead Generation</p>
+                </div>
+                <div className="col-5 ml-2 peper-card  mt-3">
+                    <h2 className="mt-2">CMS</h2>
+                    <p>custom management system</p>
                 </div>
             </div>
-            <div className=" container-fluid desk-part-10 time mobile aplicate">
-                <div className="row justify-content-center row align-items-center">
-                    <img className="col-4 pt-0 mt-5" src={timeIcon}></img>
-                </div>
-                <div className="row justify-content-center row align-items-center">
-                    <h2 className="col-5">Time</h2>
-                </div>
-                <div className="row justify-content-center row align-items-center">
-                    <h1 className="col-8 mt-3">אינדקס B2B</h1>
-                    <div className="col-9">
-                        <p className="mt-2">הפתגם ‘זמן שווה כסף’ הוא טעות. לכסף אין סוף אבל הזמן הוא המשאב המוגבל והיקר של הצוות ושל הפרויקטים. יומן חכם ומרובה אפשרויות. כמו פגישות צוות הכוללות מינוי אחראי ודו”ח מסכם. קביעת אירועים שמייצרת באופן אוטומטי דף נחיתה עם וידאו ואפשרויות מכירת כרטיסים ועוד ועוד. היומן משתלב עם כל שאר המערכות ומאפשר לנהל את הלידים, הצוותים, הפגישות, האירועים והמטרות העיסקיות.
-                        </p>
-                    </div>
-                    <div className="my-5 col-12">
-                        <img src={timeLogo}></img>
-                    </div>
-                </div>
+            <div className="row justify-content-center mt-5 mb-5" id="projectss">
+                <h1 className="mt-5 col-10 tecnolgic">פרויקטים חמים מהתנור </h1>
+                <div className=" border_ w-25 mt-3  mb-3" ></div>
             </div>
-            <div className=" container-fluid desk-part-11 stories mobile aplicate">
-                <div className="row justify-content-center row align-items-center">
-                    <img className="col-4 pt-0 mt-5" src={storiesIcon}></img>
-                </div>
-                <div className="row justify-content-center row align-items-center">
-                    <h2 className="col-7">Stories</h2>
-                </div>
-                <div className="row justify-content-center row align-items-center">
-                    <h1 className="col-8 mt-3">אינדקס B2B</h1>
-                    <div className="col-9">
-                        <p className="mt-2">
-                            הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן. בחודש הזה אנחנו יוצרים את התבנית. מאפיינים, מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם כל הפונקציות של הסטארט-אפ שלכם.                        </p>
-                    </div>
-                    <div className="my-5 col-12">
-                        <img src={storiesLogo}></img>
+            <Carousel  >
+                <div className=" container">
+                    <div className="row justify-content-center  ">
+                        <img src={knowMe}></img>
+                        <div className="project-logo-and-text">
+                            <img src={knowMeLogo}></img>
+                            <h5 className="p-mobile ">לוג עסקי המנהל את כלל הפניות וההתראות<br></br> מכל ערוצי השיווק -</h5>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className=" container-fluid desk-part-12 quote mobile aplicate">
-                <div className="row justify-content-center row align-items-center">
-                    <img className="col-4 pt-0 mt-5" src={quoteIcon}></img>
-                </div>
-                <div className="row justify-content-center row align-items-center">
-                    <h2 className="col-7">Quote</h2>
-                </div>
-                <div className="row justify-content-center row align-items-center">
-                    <h1 className="col-8 mt-3">אינדקס B2B</h1>
-                    <div className="col-9">
-                        <p className="mt-2">
-                            הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן. בחודש הזה אנחנו יוצרים את התבנית. מאפיינים, מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם כל הפונקציות של הסטארט-אפ שלכם.                        </p>
-                    </div>
-                    <div className="my-5 col-12">
-                        <img src={quoteLogo}></img>
+                <div className=" container">
+                    <div className="row justify-content-center   ">
+                        <img src={box}></img>
+                        <div className="project-logo-and-text">
+                            <img src={boxLogo}></img>
+                            <h5 className="p-mobile ">לוג עסקי המנהל את כלל הפניות וההתראות<br></br> מכל ערוצי השיווק -</h5>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className=" container-fluid desk-part-6">
-                <div className="row justify-content-center row align-items-center know-me mobile aplicate">
-                    <img className="mt-5 col-8" src={knowMeLogo}></img>
-                    <h1 className="mt-3">אינדקס B2B</h1>
-                    <div className="col-9">
-                        <p className="mt-2">. הצלחה מסחררת בגדול מתחילה בהצלחה מוכחת בקטן ,
-                        בחודש הזה אנחנו יוצרים את התבנית.
-                        מאפיינים מעצבים ומוכיחים את הקונספט של הפרוטוטייפינג עם .כל הפונקציות של הסטארט-אפ שלכם
-                        </p>
-                    </div>
-                    <div className=" col-12">
-                        <img src={phone}></img>
+                <div className=" container">
+                    <div className="row justify-content-center   ">
+                        <img src={hub}></img>
+                        <div className="project-logo-and-text">
+                            <img src={hubLogo}></img>
+                            <h5 className="p-mobile ">לוג עסקי המנהל את כלל הפניות וההתראות<br></br> מכל ערוצי השיווק -</h5>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="container-fluid mobile-part-14">
+                <div className=" container">
+                    <div className="row justify-content-center   ">
+                        <img src={funnel}></img>
+                        <div className="project-logo-and-text">
+                            <img src={leaderFunnelLogo}></img>
+                            <h5 className="p-mobile ">לוג עסקי המנהל את כלל הפניות וההתראות<br></br> מכל ערוצי השיווק -</h5>
+                        </div>
+                    </div>
+                </div>
+                <div className=" container ">
+                    <div className="row justify-content-center   ">
+                        <img src={time}></img>
+                        <div className="project-logo-and-text">
+                            <img src={timeLogo}></img>
+                            <h5 className="p-mobile ">לוג עסקי המנהל את כלל הפניות וההתראות<br></br> מכל ערוצי השיווק -</h5>
+                        </div>
+                    </div>
+                </div>
+            </Carousel>
+
+            <div className="container-fluid mobile-part-14" id="servies">
                 <div className="row  justify-content-center ">
                     <div className="step-one ">
                         <h1 className="mt-5  ">בואו נדבר</h1>
-                        <div className="" >
-                            <label className="col-12  mt-5" for="full-name">שם מלא</label><br></br>
-                            <input className="col-12" type="text" id="full-name" name="fullname"></input><br></br>
-                            <label className="col-12" for="email">אימייל</label><br></br>
-                            <input className=" col-12" type="text" id="email" name="lastname"></input><br></br>
-                            <label className="col-12" for="your-massage">ההודעה שלך</label><br></br>
+                        <div className="mt-5" >
+                            <label className="col-12 label mt-5" for="full-name">שם מלא</label><br></br>
+                            <input className="col-12 mb-3 " type="text" id="full-name" name="fullname"></input><br></br>
+                            <label className="col-12 label" for="email">אימייל</label><br></br>
+                            <input className="col-12 mb-3" type="text" id="email" name="lastname"></input><br></br>
+                            <label className="col-12 label pt-5" for="your-massage">נייד</label><br></br>
                             <input className="col-12" type="text" id="your-massage" name="your-massage"></input><br></br>
                         </div>
-                        <button className="mt-5 col-12  justify-content-center align-items-center call-us"></button>
-
+                        <button className="appointment px-5 py-2 mt-5"  >שלח</button>
                     </div>
 
                 </div>
-                <div className="details mt-5">
-                    <div className="row justify-content-center">
-                        <p className="col-6" >בר כוכבא 4 בני ברק</p>
-                        <img className="" src={locationIcon}></img>
+                <div className="details mt-5 mb-5">
+                    <div className=" ">
+                        <p className="" >בר כוכבא 4 בני ברק</p>
+                        <img className="" className="" src={locationIcon}></img>
                     </div>
-                    <div className="row justify-content-center">
-                        <p className="col-6">03-1234567</p>
-                        <img src={phoneIcon}></img>
+                    <div className="  ">
+                        <p className="">03-1234567</p>
+                        <img className="" src={phoneIcon}></img>
                     </div>
-                    <div className="row justify-content-center">
-                        <p className="col-6">info@leader.codes</p>
-                        <img src={mailIcon}></img>
+                    <div className=" mb-5">
+                        <p className="">info@leader.codes</p>
+                        <img className="" src={mailIcon}></img>
                     </div>
                 </div>
             </div>
